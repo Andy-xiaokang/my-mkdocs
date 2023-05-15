@@ -1,6 +1,6 @@
 site_name: My Docs
 theme:
-  name: materialmk
+  name: material
 
 nav:
   - 前言: "index.md"
