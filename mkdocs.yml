@@ -2,13 +2,63 @@ site_name: My Docs
 theme:
   name: material
 
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  - pymdownx.critic:
+      mode: view
+
+  - pymdownx.details
+
+  - pymdownx.emoji:
+      #emoji_index: !!python/name:materialx.emoji.twemoji 
+      #emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+  - pymdownx.superfences 
+
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+
+
 nav:
   - 前言: "index.md"
   - practical_skills:
-      - markdown_tutorial: "practicalskills/markdown_tutorial.md"
-      - git&github: "git_learning.md"
+      - markdown_tutorial: "practical_skills/markdown_tutorial.md"
+      - git&github: "practical_skills/git_learning.md"
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Andy-xiaokang/my-mkdocs
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
