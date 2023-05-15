@@ -1,4 +1,14 @@
 site_name: My Docs
 theme:
-  name: material
+  name: materialmk
 
+nav:
+  - 前言: "index.md"
+  - practical_skills:
+      - markdown_tutorial: "practicalskills/markdown_tutorial.md"
+      - git&github: "git_learning.md"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Andy-xiaokang/my-mkdocs
