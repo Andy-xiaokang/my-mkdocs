@@ -1,50 +1,59 @@
 site_name: My Docs
 theme:
   name: material
+  features:
+    - content.code.copy
+    - content.tabs.link
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem
-
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-
-  - pymdownx.critic:
-      mode: view
-
+  - admonition
   - pymdownx.details
-
-  - pymdownx.emoji:
-      #emoji_index: !!python/name:materialx.emoji.twemoji 
-      #emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
-      use_pygments: true
-      pygments_lang_class: true
-      auto_title: true
-      linenums: true
-      linenums_style: pymdownx-inline
       line_spans: __span
-  - pymdownx.superfences 
-
+      pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.smartsymbols
   - pymdownx.snippets
-
-
+  - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true
-
-
-
+      alternate_style: true 
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji
+  - tables
+  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-      clickable_checkbox: true
 
+
+
+
+
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#       use_pygments: true
+#       pygments_lang_class: true
+# #      auto_title: true
+#       linenums: true
+#       linenums_style: pymdownx-inline
+#       line_spans: __span
+
+
+
+  - pymdownx.keys
+  - pymdownx.smartsymbols
 
 
 nav:

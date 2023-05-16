@@ -6,6 +6,8 @@
 #### Heading lever 4
 ##### Heading lever 5
 ###### Heading lever 6
+
+
 ## markdown 段落语法
 空行且段首不要空格
 I really like using markdown.
@@ -55,20 +57,23 @@ This is really ***very*** imporant
 
 ## markdown 列表语法
 有序列表，列表项前添加数字并紧跟一个英文句点，数字不必按数学顺序排列，但列表应当以数字1起始
+
 1. first item
-2. second item 
+2. second item
 3. third item
-   1. indented item 
-   2. indented item
-4. forth item
+   
+   1. first item
+   2. second
+
+4. fourth item
 
 无序列表
-* first item
-* second Item
-* third item
+
+*  first item
+  
   * indented item
   * indented item
-* fourth item
+
 
 在列表中嵌套其他元素，请将该元素缩进四个空格或一个制表符
 * first item
@@ -76,10 +81,13 @@ This is really ***very*** imporant
     I need to add another paragraph below the second list item
 * third item
 
+
 * first item
 * second item
     > A blockquote would look great below the second list item.
 * third item
+
+******
 
 1. first item
 2. second item 
@@ -90,14 +98,14 @@ This is really ***very*** imporant
     }
     ```
 3. third item
-
-图片
+***
 1. first item
 2. second item 
     ![截屏2023-04-12 20.44.12](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-04-12%2020.44.12.png)
 3. third item
 
 列表
+
 1. first item
 2. second item 
     * indented item
@@ -145,10 +153,12 @@ This is the *[Markdown Guide](https://markdown.com.cn)*
 
 ## markdown 扩展语法
 Markdown 表格
+
 | syntax  | description| test text|
 |:--- | :---: | ---: |
 |Header|title|here's this|
 |paragraph |text|and more|
+
 围栏代码块
 ```json
 {
@@ -171,9 +181,26 @@ Markdown删除线
 ~~世界是平坦的~~，我们现在知道是圆的
 
 Markdown任务列表语法
+
 - [x] write the press release
 - [ ] update the website
 - [ ] contact the media 
 
 Markdown 高亮语法
 ==高亮==
+
+1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
+    sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
+    nulla. Vivamus a pharetra leo.
+
+    1.  Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
+        quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
+        ultricies libero efficitur sed.
+
+    2.  Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
+        rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a.
+
+        1.  Mauris dictum mi lacus
+        2.  Ut sit amet placerat ante
+        3.  Suspendisse ac eros arcu
+
