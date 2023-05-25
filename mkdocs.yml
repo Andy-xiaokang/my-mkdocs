@@ -61,6 +61,8 @@ nav:
   - practical_skills:
       - markdown_tutorial: "practical_skills/markdown_tutorial.md"
       - git&github: "practical_skills/git_learning.md"
+      - shell: "practical_skills/shell_learning.md"
+      - vim: "practical_skills/vim_learning.md"
 
 extra:
   social:
