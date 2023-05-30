@@ -1,6 +1,8 @@
 site_name: My Docs
 theme:
   name: material
+  font:
+    text:Roboto 
   features:
     - content.code.copy
     - content.tabs.link
@@ -63,6 +65,7 @@ nav:
       - git&github: "practical_skills/git_learning.md"
       - shell: "practical_skills/shell_learning.md"
       - vim: "practical_skills/vim_learning.md"
+      - data_wrangling: "practical_skills/data_wrangling.md"
 
 extra:
   social:
