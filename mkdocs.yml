@@ -66,6 +66,7 @@ nav:
       - shell: "practical_skills/shell_learning.md"
       - vim: "practical_skills/vim_learning.md"
       - data_wrangling: "practical_skills/data_wrangling.md"
+      - command-line environment: "practical_skills/Command_line_environment.md"
 
 extra:
   social:
