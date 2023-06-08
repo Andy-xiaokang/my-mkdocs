@@ -62,3 +62,88 @@ How should you organize your dotfiles? They should be in their own folder, under
 
 you can find tons of [dotfiles repositories](https://github.com/search?o=desc&q=dotfiles&s=stars&type=Repositories) on Github — see the most popular one [here](https://github.com/mathiasbynens/dotfiles) (we advise you not to blindly copy configurations though). [Here](https://dotfiles.github.io) is another good resource on the topic.  
 All of the class instructors have their dotfiles publicly accessible on GitHub:[Anish](https://github.com/anishathalye/dotfiles).
+
+*** 
+
+here are some knowledge from exercise.  
+[tmux custmization following these steps](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)  
+[How to create symbolic link](https://www.freecodecamp.org/news/linux-ln-how-to-create-a-symbolic-link-in-linux-example-bash-command/)  
+[create a version control folder for dotfiles](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/command-line-solution/)  
+## dotfiles hw
+Set up a method to install your dotfiles quickly(and without manual effort) on a new machine. This can be as simple as a shell script that calls `ln -s` for each file. After this you can 
+
+1. Test your installation script on a fresh virtual machine.  
+2. Migrate all of your current tool configurations to your dotfiles repository.  
+3. Publish your dotfiles on GitHub.
+
+```sh title="autoconfig.sh"
+#!/bin/bash
+files=$(ls -a ~gits/dotfiles | grep -E '\..*' | grep -v .git)
+for file in 'echo $files'; do
+    ln -s ~/gits/dotfiles/$file ~/$file   #create softlink
+done
+```
+## Remote machines 
+[Install a Linux virtual machine](https://hibbard.eu/install-ubuntu-virtual-box/)  
+1. Go to `~/.ssh/` and check if you have a pair of SSH keys there. If not, generate them with 
+```sh
+ssh-keygen -o -a 100 -t ed25519
+```
+this will create two files named `id_ed25519` and `id_ed25519.pub` to store prive key and public key respectively.  
+2. Edit .ssh/config to have an entry as follows
+
+```
+Host ubuntu-server2204
+	User andy
+	HostName 192.168.159.216
+	Identityfile ~/.ssh/id_ed25519
+	LocalForward 9999 localhost:8888
+
+```
+3. use `ssh-copy-id ubuntu-server2204` to copy your ssh key to the server.  
+4. Start a webserver in your VM by executing `python -m http.server 888`. Access the VM webserver by navigating to `http:localhost:9999` in your machine.  
+5. Edit your SSH server config by doing `sudo vim /etc/ssh/sshd_config` and disable password authentication by editing the value of `PasswordAuthentication`. Disable root login by editing the value of `PermitRootLogin`. Restart the `ssh` service with `sudo service sshd restart`. Try sshing in again.
+
+Here is the operation on Virtual Machine  
+
+* 在虚拟机上创建**root登录账号**（[login as root](https://help.ubuntu.com/community/RootSudo#root_account)）。caution: it is different between login as root and root user.  
+```sh
+VBoxManage startvm "Ubuntu-Server-22.04" --type headless
+ssh ubuntu-server2204
+passwd root     #输入密码，创建root登录账号
+sudo vim /etc/ssh/sshd_config
+# find the line #PermitRootLogin prohibit-password, create a new line below
+# add "PermitRootLogin yes"
+service sshd restart
+# restart sshd service and bring the change into effect
+exit
+``` 
+ps: sshd service may need restart VM to take effect, start the VM in terminal:  
+```sh
+VBoxManage controlvm "Ubuntu-Server-22.04" poweroff
+VBoxManage startvm "Ubuntu-Server-22.04" --type headless
+```
+* Login as root and connect to VM
+  `ssh root@192.168..` login as root successfully.
+
+* reconfig sshd, forbid login as root 
+  ```sh
+  vim /etc/ssh/sshd_config
+  # find the line "#PasswordAuthentication yes" and open a new line below
+  #add "PasswordAuthentication no"
+  #find the line "PermitRootLogin yes", change yes to no 
+  service sshd restart
+  ```
+
+* login as root again 
+  ```sh
+  ssh root@192.168..
+  # Permission denied, please try again
+  ssh ubuntu-server2204
+  # login successfully
+  ```
+  the change for `PermitRootLogin` and `PasswordAuthentication` will only affect login as root, but won't affect `ssh ubuntu-server2204`  
+  the permission for login as root has risk for security, so it is not advisable. for the created login as root method, can be deleted as follows:  
+  ```sh
+  sudo passwd -dl root
+  ```
