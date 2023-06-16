@@ -67,6 +67,7 @@ nav:
       - vim: "MIT_missing&practical_skills/vim_learning.md"
       - data_wrangling: "MIT_missing&practical_skills/data_wrangling.md"
       - command-line environment: "MIT_missing&practical_skills/Command_line_environment.md"
+      - Version control(Git): "MIT_missing&practical_skills/Git.md"
 
 extra:
   social:
