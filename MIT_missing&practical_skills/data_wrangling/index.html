@@ -1,0 +1,914 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../vim_learning/">
+      
+      
+        <link rel="next" href="../Command_line_environment/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+    
+    
+      
+        <title>data_wrangling - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-wrangling" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              data_wrangling
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        前言
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          MIT_missing&practical_skills
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          MIT_missing&practical_skills
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown_tutorial/" class="md-nav__link">
+        markdown_tutorial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_learning/" class="md-nav__link">
+        git&github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell_learning/" class="md-nav__link">
+        shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vim_learning/" class="md-nav__link">
+        vim
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          data_wrangling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        data_wrangling
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sedgrep" class="md-nav__link">
+    sed&amp;grep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regrex-one" class="md-nav__link">
+    Regrex one
+  </a>
+  
+    <nav class="md-nav" aria-label="Regrex one">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson1-an-introduction-and-the-abcs" class="md-nav__link">
+    Lesson1: An Introduction, and the ABCs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson2-the-dot" class="md-nav__link">
+    lesson2: The Dot.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson3-matching-specific-characters" class="md-nav__link">
+    lesson3: Matching specific characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson4-excluding-specific-characters" class="md-nav__link">
+    lesson4: Excluding specific characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson5-character-ranges" class="md-nav__link">
+    lesson5: Character ranges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-6-catching-some-zzzs" class="md-nav__link">
+    Lesson 6: Catching some  zzz's
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-7-mrkleene-mrkleene" class="md-nav__link">
+    lesson 7: Mr.Kleene, Mr.Kleene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-8-character-optional" class="md-nav__link">
+    lesson 8: Character optional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-9-all-this-whitespace" class="md-nav__link">
+    Lesson 9: All this whitespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-10-starting-and-ending" class="md-nav__link">
+    Lesson 10: Starting and ending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-11-match-groups" class="md-nav__link">
+    Lesson 11: Match groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-12-nested-groups" class="md-nav__link">
+    Lesson 12 : Nested groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-13-more-group-work" class="md-nav__link">
+    Lesson 13: More group work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson14-its-all-conditional" class="md-nav__link">
+    Lesson14: It's all conditional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson15-other-special-characters" class="md-nav__link">
+    Lesson15: Other special characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Command_line_environment/" class="md-nav__link">
+        command-line environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        Version control(Git)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metaprogramming/" class="md-nav__link">
+        Metaprogramming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sedgrep" class="md-nav__link">
+    sed&amp;grep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regrex-one" class="md-nav__link">
+    Regrex one
+  </a>
+  
+    <nav class="md-nav" aria-label="Regrex one">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson1-an-introduction-and-the-abcs" class="md-nav__link">
+    Lesson1: An Introduction, and the ABCs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson2-the-dot" class="md-nav__link">
+    lesson2: The Dot.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson3-matching-specific-characters" class="md-nav__link">
+    lesson3: Matching specific characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson4-excluding-specific-characters" class="md-nav__link">
+    lesson4: Excluding specific characters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson5-character-ranges" class="md-nav__link">
+    lesson5: Character ranges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-6-catching-some-zzzs" class="md-nav__link">
+    Lesson 6: Catching some  zzz's
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-7-mrkleene-mrkleene" class="md-nav__link">
+    lesson 7: Mr.Kleene, Mr.Kleene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-8-character-optional" class="md-nav__link">
+    lesson 8: Character optional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-9-all-this-whitespace" class="md-nav__link">
+    Lesson 9: All this whitespace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-10-starting-and-ending" class="md-nav__link">
+    Lesson 10: Starting and ending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-11-match-groups" class="md-nav__link">
+    Lesson 11: Match groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-12-nested-groups" class="md-nav__link">
+    Lesson 12 : Nested groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-13-more-group-work" class="md-nav__link">
+    Lesson 13: More group work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson14-its-all-conditional" class="md-nav__link">
+    Lesson14: It's all conditional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson15-other-special-characters" class="md-nav__link">
+    Lesson15: Other special characters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="data-wrangling">Data Wrangling</h1>
+<h2 id="sedgrep">sed&amp;grep</h2>
+<p>sed: stream editor, The <code>s</code> command is written on the form: <code>s/REGEX/SUBSTITUTION/</code>, where <code>REGEX</code> is the regular expression you want to search for, and <code>SUBSTITUTION</code> is the text you want to substitute matching text with.
+grep: Find patterns in files using regular expressions and print.<br />
+less: Open a file for interactive reading, allowing scrolling and search.</p>
+<table>
+<thead>
+<tr>
+<th align="center">command</th>
+<th align="center">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>sed 's/查找内容/替换内容/' 文件名</code></td>
+<td align="center">替换文件中第一个出现的字符串，并打印结果</td>
+</tr>
+<tr>
+<td align="center"><code>sed -E 's/正则表达式/替换内容/g' 文件名</code></td>
+<td align="center">替换文件中所有符合正则表达式的部分</td>
+</tr>
+<tr>
+<td align="center"><code>grep "search_pattern" path/to/file</code></td>
+<td align="center">Search for a pattern within a file</td>
+</tr>
+<tr>
+<td align="center"><code>grep -i</code></td>
+<td align="center">Perform case insensitive matching.  By default, grep is case sensitive.</td>
+</tr>
+<tr>
+<td align="center"><code>less source_file</code></td>
+<td align="center">Open a file</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="regular-expressions">Regular Expressions</h2>
+<p>Regular expressions are usually(though not always) surrounded by <code>/</code>. Most ASCII characters just carry their normal meaning, but some characters have "special"matching behavior. Exactly which characters do what vary somewhat between different implementations of regular expressions<br />
+Very common patterns are:  </p>
+<table>
+<thead>
+<tr>
+<th align="center">character</th>
+<th align="center">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>.</code></td>
+<td align="center">means "any single character" except newline(<code>\n</code>)</td>
+</tr>
+<tr>
+<td align="center"><code>*</code></td>
+<td align="center">zero or more of the preceding match</td>
+</tr>
+<tr>
+<td align="center"><code>+</code></td>
+<td align="center">one or more of the preceding match</td>
+</tr>
+<tr>
+<td align="center"><code>[abc]</code></td>
+<td align="center">any one character of <code>a</code>,<code>b</code>,<code>c</code></td>
+</tr>
+<tr>
+<td align="center"><code>(RX1|RX2)</code></td>
+<td align="center">either something that matches <code>RX1</code> or <code>RX2</code></td>
+</tr>
+<tr>
+<td align="center"><code>^</code></td>
+<td align="center">the start of the line</td>
+</tr>
+<tr>
+<td align="center"><code>$</code></td>
+<td align="center">the end of the line</td>
+</tr>
+</tbody>
+</table>
+<p><code>sed</code>'s regular expressions are somewhat weird, and will require you to put a <code>\</code>before most of these "special" characters to transfer their character.<br />
+<code>*</code> and <code>+</code> are, by default ,"greedy". they will match as much text as they can, and you can just suffix <code>*</code> or <code>+</code> with a <code>?</code> to make them non-greedy, but sadly <code>sed</code> doesn't support that. we could switch to perl's command-line mode though, which does support that construct:  </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>perl -pe &#39;s/.*?Disconnected from //&#39;
+</span></code></pre></div>
+We'll stick to <code>sed</code> for the rest of this, because it's by far the more common tool for these kinds of jobs. <code>sed</code> can also do other handy things like print lines following a given match, do multiple substitutions per invocation, search for things, etc.  </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sed -E &#39;s/.*Disconnected from (invalid |authenticating )?user .* [^ ]+ port [0-9]+( \[preauth\])?$//&#39;
+</span></code></pre></div>
+<code>[^ ]+</code> match any non-empty sequence of non-space characters. the entire log becomes empty. We want to keep the username after all. For this, we can use "capture groups". Any text matched by a regrex surrounded by parentheses is stored in a numbered capture group. These are available in the substitution as <code>\1</code>,<code>\2</code>,<code>\3</code>,etc.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sed -E &#39;s/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/&#39;
+</span></code></pre></div>
+<p>some other data wrangling commands<br />
+<img alt="截屏2023-05-26 17.01.47" src="https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-05-26%2017.01.47.png" /> 
+<img alt="截屏2023-05-26 15.50.17" src="https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-05-26%2015.50.17.png" /><br />
+<img alt="截屏2023-05-26 15.48.42" src="https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-05-26%2015.48.42.png" /><br />
+<img alt="截屏2023-05-27 16.53.10" src="https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-05-27%2016.53.10.png" /></p>
+<h2 id="regrex-one"><a href="https://regexone.com">Regrex one</a></h2>
+<h3 id="lesson1-an-introduction-and-the-abcs">Lesson1: An Introduction, and the ABCs</h3>
+<p>the first thing to recognize when using regular expressions is that <strong><em>everything is essentially a character</em></strong>, and we are writing patterns to match a specific sequence of characters(also known as a <strong>string</strong>). Most patterns use normal ASCII, which includes <strong>letters, digits, punctuation</strong> and other symbols on your keyboard like <code>%#$@!</code>, but unicode characters can also be used to match any type of international text.<br />
+In fact, numbers 0-9 are also just characters and you can look at an <a href="https://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters">ASCII table</a> where they are listed sequentially. a number of special metacharacters used in regular expressions can match a specific type of character. In this case, the character <code>\d</code> can be used in place of <strong>any digit from 0 to 9</strong>. the preceding slash distinguished it from the simple <code>d</code> character and indicates that it is a metacharacter.</p>
+<h3 id="lesson2-the-dot">lesson2: The Dot<code>.</code></h3>
+<p>In some card games, the joker is a wildcard and can represent any card in the deck. Similarily, there is the concept of a <strong><em>wildcard</em></strong>, which is represented by the <code>.</code> metacharacter, and can <code>match any single character</code>(letter, digit, whitespace, everything). In order to specifically match a period, you need to escape the dot by using a slash . accordingly.  </p>
+<h3 id="lesson3-matching-specific-characters">lesson3: Matching specific characters</h3>
+<p>There is a method for <code>matching specific characters</code> using regular expressions, by defining them inside <code>square brackets</code>. For example, the pattern <code>[abc]</code> will only match a <strong>single</strong> a, b, or c letter and nothing else.</p>
+<h3 id="lesson4-excluding-specific-characters">lesson4: Excluding specific characters</h3>
+<p>In some cases, we might know that there are specific characters that we don't want to match too, for example, we might only want to match phone numbers that are <strong>not</strong> from the area code 650.<br />
+To represent this, We use a similar expression that <strong>excludes specific characters</strong> using the <strong>square brackets</strong><code>[]</code> and the <code>^</code>(<strong>hat</strong>). for example, the pattern <code>[^abc]</code>  will match any <strong>single</strong> character <strong>except for</strong> the letters a, b, or c.</p>
+<h3 id="lesson5-character-ranges">lesson5: Character ranges</h3>
+<p>there is a shorthand for matching a character in list of <strong>sequential characters</strong> by using the <strong>dash</strong> to indicate a character range. For example, the pattern <code>[0-6]</code> will only match any single digit character from zero to six, and nothing else. And likewise, <code>[^n-p]</code> will only match any single character <code>except</code> for letters n to p.<br />
+Multiple character ranges can also be used in the same set of brackets, along with individual characters. An example of this is the alphanumeric <code>\w</code> metacharacter which is equivalent to the character range <code>[A-Za-z0-9_]</code> and often used to match characters in English text.  </p>
+<h3 id="lesson-6-catching-some-zzzs">Lesson 6: Catching some  zzz's</h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>some parts of the repetition synax below isn't supported in all regular expression implementations.</p>
+</div>
+<p>We've so far learned how to specify the range of characters we want to match, but how about the number of <strong>repetition</strong> of characters that we want to match? one way that we can do this is to explicitly spell out exactly three digits.<br />
+A more convenient way is to specify how many repetition of each character we want using the <strong>curly braces</strong> notation. For example, <code>a{3}</code> will match the <strong>a</strong> character exactly three times. Certain regular expression engines will even allow you to specify a range for this repetition such that <code>a{1,3}</code> will match the a character no more than 3 times, but no less than once for example.<br />
+This quantifier can be used with any character, or special metacharacters, for example <code>w{3}</code>(three w), <code>[wxy]{5}</code>(five characters, each of which can be a, w, x, or y) and <code>.{2,6}</code> (<strong>any</strong> character between two and six).  </p>
+<h3 id="lesson-7-mrkleene-mrkleene">lesson 7: Mr.Kleene, Mr.Kleene</h3>
+<p>A powerful concept in regular expressions is the ability to match an arbitrary number of characters. For example, imagine that you wrote a form that has a donation field that takes a numerical value in dollars. A wealthy user may drop by and want to donate $25,000, while a normal user may want to donate $25.<br />
+One way to express such a pattern would be use what is known as the <strong>Kleene Star</strong> and the <strong>Kleene Plus</strong>, which essentially represents either <strong>0 or more</strong> or <strong>1 or more</strong> of the character that it follows(it always follows a character or group). For example, to match the donations above, we can use the pattern <code>\d*</code> to match any number of digits, but a tighter regular expression would be <code>\d+</code> which ensures that the input string has at least one digit.<br />
+These quantifiers can be used with any character or special metacharacters, for example <code>a+</code>(one or more a's), <code>[abc]+</code>(one or more of any a, b, or c character) and <code>.*</code> (zero or more of <strong>any</strong> character).  </p>
+<h3 id="lesson-8-character-optional">lesson 8: Character optional</h3>
+<p>As you saw in the previous lesson, the Kleene star and plus allow us to match repeated characters in a line.<br />
+Another quantifier that is really common when matching and extracting text is the <code>?</code>(question mark) metachatacter which denotes <strong>optionality</strong>. This metacharacter allows you to match either zero or one of the preceding character or group. For example, the pattern <code>ab?c</code> will match either the strings "abc" or "ac" because the b is considered optional.<br />
+Similar to the dot metacharacter, the question mark is a special character and you will have to escape it using a slash \? to match a plain question mark character in a string.  </p>
+<h3 id="lesson-9-all-this-whitespace">Lesson 9: All this whitespace</h3>
+<p>When dealing with real-world input, such as log files and even user input, it's difficult not to encounter whitespace. We use it to format pieces of information to make it easier to read and scan visually, and a single space can put a wrench into the simplest regular expression.<br />
+The most common forms of whitespace you will use with regular expressions are the <strong>space</strong>, the <strong>tab(\t)</strong>, the <strong>new line(\n)</strong> and the carriage returrn <strong>(\r)</strong>(useful in Windows environments), and these special characters match each of their respective whitespaces. In addition, a <strong>whitespace</strong> special character <code>\s</code> will match <strong>any</strong>  of the specific whitespaces above and is extremely useful when dealing with raw input text.  </p>
+<h3 id="lesson-10-starting-and-ending">Lesson 10: Starting and ending</h3>
+<p><strong>write as specific regular expressions as possible</strong> to ensure that we don't get false positives when matching against real world text.<br />
+One way to tighten our patterns is to define a pattern that describes both the <strong>start and the end of the line</strong> using the special <code>^</code>(<strong>hat</strong>) and <code>$</code>(<strong>dollar</strong>) metacharacters. In the example above, we can use the pattern <code>^success</code> to match <strong>only</strong> a line that begins with the word "success", but not the line dollar sign, you create a pattern that matches the whole line completely at the beginning and end.</p>
+<h3 id="lesson-11-match-groups">Lesson 11: Match groups</h3>
+<p>Regular expression allow us to not just match text but also to <strong>extract information for further processing</strong>. This is done by defining <strong>groups of characters</strong> and capturing them using the special parentheses(and) metacharacters. Any subpattern inside a pair of parentheses will be <strong>captured</strong> as a group. In Practice, this can be used to extract information like phone numbers or emails from all sorts of data.<br />
+Imagine for example that you had a command line tool to list all the image files you have in the cloud. you could then use a pattern such as <code>^(IMG\d+\.png)$</code> to capture and extract the full filename, but if you only wanted to capture the filename without the extension, you could use the pattern <code>^(IMG\d+)\.png$</code> which only captures the part before the period.  </p>
+<h3 id="lesson-12-nested-groups">Lesson 12 : Nested groups</h3>
+<p>When you are working with complex data, you can easily find yourself having to extract multiple layers of information, which can result in nested groups. Generally, the results of the captured groups are in the order in which they are defined(in order by open parenthesis).<br />
+Take the example from the previous lesson, of capturing the filenames of all the image files you have in a list. If each of these image files had a sequential picture number in the filename, you could extract both the filename and the picture number using the same pattern by writing an expression like <code>^(IMG(\d+))\.png$</code>(using a nested parenthesis to capture the digits).<br />
+The nested groups are read from left to right in the pattern, with the first capture group being the contents of the first parentheses group, etc.  </p>
+<h3 id="lesson-13-more-group-work">Lesson 13: More group work</h3>
+<p>As you saw in the previous lessons, all the quantifiers including the <strong>star*</strong>, <strong>plus +</strong>, repetition <strong>{m,n}</strong> and the question mark <strong>?</strong> can all be used within the capture group patterns. This is the only way to apply quantifiers on sequences of characters instead of the individual characters themselves.<br />
+For example, if I knew that a phone number may or may not contain an area code, the right pattern would test for the existence of the whole group of digits <code>(\d{3})?</code> and not the individual characters themselves(which would be wrong).  </p>
+<h3 id="lesson14-its-all-conditional">Lesson14: It's all conditional</h3>
+<p>As we mentioned before, it's always good to be precise, and that applies to coding, talking, and even regular expressios. For example, you wouldn't write a grocery list for someone to <strong>Buy more</strong> <code>.*</code> because you would have no idea what you could get back. Instead you would write <strong>Buy more milk</strong> or <strong>Buy more bread</strong>, and in regular expressions, we can actually define these conditions explicitly.<br />
+Specifically when using groups, you can use the <code>|</code> (<strong>logical OR,aka. the pipe</strong>) to denote <strong>different possible sets of characters.</strong> In the above example, I can write the pattern "Buy more(milk|bread|juice)" to match only the strings Buy more milk, Buy more bread, or Buy more juice. <br />
+Like normal groups, you can use any sequence of characters or metacharacters in a condition, for example, <code>([cb]ats*|[dh]ogs?)</code> would match either cats or bats, or, dogs or hogs. Writing patterns with many condition can be hard to read, so you should consider making them separate if they get too complex.  </p>
+<h3 id="lesson15-other-special-characters">Lesson15: Other special characters</h3>
+<p>This lesson will cover some extra metacharacters, as well as the results of captured groups.<br />
+We have already learned the most common metacharacters to capture digits using <code>\d</code>, whitespace using <code>\s</code>, and alphanumeric letters and digits using <code>\w</code>, but regular expressions also provides a way of specifying the opposite sets of each of these metacharacters by using their upper case letters. For example,<code>\D</code> represents any <strong>non-digit</strong>, <code>\S</code> any <strong>non-whitespace</strong> character, and <code>\W</code> any <strong>non-alphanumeric</strong> character(such as punctuation). Depending on how you compose your regular expression, it may be easier to use one or the other.<br />
+Additionally, there is a special metacharacter <code>\b</code> which matches the boundary between a word and a non-word character. It's most useful in capturing entire words(for example by using the pattern <code>\w+\b</code>).<br />
+One concept that we will not explore in great detail in these lessons is <strong>back referencing</strong>, mostly because it varies depending on the implementation. However, many systems allow you to reference your captured groups by using <strong><code>\0</code></strong>(usually the full matched text), <code>\1</code>(group1), <code>\2</code>(group 2), etc. This is useful for example when you are in a text editor and doing a search and replace using regular expressions to swap two numbers, you can search for <code>"(\d+)-(\d+)"</code> and replace it with <code>"\2-\1"</code> to put the second captured number first, and the first captured number second for example.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Andy-xiaokang/my-mkdocs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      
+        
+          <script src="../../javascripts/mathjax.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+    
+  </body>
+</html>
