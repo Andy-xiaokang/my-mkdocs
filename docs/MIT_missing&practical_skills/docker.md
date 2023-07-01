@@ -99,3 +99,22 @@ docker build Dockerfile -t mmumshad/my-custom-app
 docker push mmumshad/my-custom-app   # docker registry
 ```
 ![20230626135744](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230626135744.png)
+
+## Docker networking
+![20230630235415](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230630235415.png)  
+![截屏2023-06-30 23.54.59](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-06-30%2023.54.59.png)  
+![20230630235604](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230630235604.png)  
+![20230630235626](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230630235626.png)  
+
+## Docker storage
+![20230630235838](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230630235838.png)  
+![20230630235908](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230630235908.png)  
+![20230701000004](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000004.png)  
+![20230701000034](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000034.png)  
+
+## Docker compose
+![20230701000513](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000513.png)  
+![20230701000605](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000605.png)  
+
+## Docker image
+![20230701000650](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000650.png)
