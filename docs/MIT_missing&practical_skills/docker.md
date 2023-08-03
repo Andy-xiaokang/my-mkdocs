@@ -116,5 +116,5 @@ docker push mmumshad/my-custom-app   # docker registry
 ![20230701000513](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000513.png)  
 ![20230701000605](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000605.png)  
 
-## Docker image
-![20230701000650](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/20230701000650.png)
+## Docker registry
+![截屏2023-07-01 00.06.36](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-07-01%2000.06.36.png)

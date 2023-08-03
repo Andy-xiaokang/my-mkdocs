@@ -121,3 +121,4 @@ Whenever you’re typing in any command, think about what manipulation the comma
 [Git branching-basic branching and merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)  
 [Git branching-remote branches](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches)  
 [Git branching-rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+***
