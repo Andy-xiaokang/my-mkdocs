@@ -69,7 +69,7 @@ Fundamentally, the qualities of good functions all reinforce the idea that funct
 
 ## 1.5 Control
 ### 1.5.2 Compound Statements
-A compound statement is so called because it is composed of other statements (simple and compound). Compound statements typically span multiple lines and start with a one-line header ending in a colon, which identifies the type of statement. Together, a header and an indented suite of statements is called a clause. A compound statement consists of one or more clauses:
+A compound statement is so called because it is composed of other statements (simple and compound). Compound statements typically span multiple lines and start with a one-line header ending in a colon, which identifies the type of statement. Together, ***a header and an indented suite of statements is called a clause***. A compound statement consists of one or more clauses:
 
 ```python
 <header>:
@@ -129,8 +129,8 @@ result = add_ten(n)
 ==**Lexical scope**==. Locally defined functions also have access to the name bindings in the scope in which they are defined. In this example, `sqrt_update` refers to the name `a`, which is a formal parameter of its enclosing function `sqrt`. ***This discipline of sharing names among nested definitions is called lexical scoping.*** ==**Critically, the inner functions have access to the names in the environment where they are defined (not where they are called).**==  
 We require two extensions to our environment model to enable lexical scoping.  
 
-1. Each user-defined function has a parent environment: the environment in which it was defined. 
-2. When a user-defined function is called, its local frame extends its parent environment.  
+1. **==Each user-defined function has a parent environment: the environment in which it was defined==**
+2. **==When a user-defined function is called, its local frame extends its parent environment.==**
 
 ```python
 1   def average(x, y):
@@ -159,8 +159,8 @@ We require two extensions to our environment model to enable lexical scoping.
 The return expression in the body of `sqrt_update` can ==***resolve a value for `a` by following this chain of frames***==. Looking up a name finds the first value bound to that name in the current environment. **Python checks first in the `sqrt_update` frame -- no a exists. Python ==checks next in the parent frame==, `f1`, and finds a binding for `a` to 256.**  
 Hence, we realize two key advantages of lexical scoping in Python.  
 
-* The names of a local function do not interfere with names external to the function in which it is defined, because the local function name will be bound in the current local environment in which it was defined, rather than the global environment.  
-* A local function can access the environment of the enclosing function, because the body of the local function is evaluated in an environment that extends the evaluation environment in which it was defined.  
+* **==The names of a local function do not interfere with names external to the function in which it is defined, because the local function name will be bound in the current local environment in which it was defined, rather than the global environment.==**  
+* **==A local function can access the environment of the enclosing function, because the body of the local function is evaluated in an environment that extends the evaluation environment in which it was defined.==**  
 The `sqrt_update` function carries with it some data: the value for `a` referenced in the environment in which it was defined. Because they "enclose" information in this way, locally defined functions are often called ***closures***.  
 
 ### 1.6.4 Functions as Returned Values
