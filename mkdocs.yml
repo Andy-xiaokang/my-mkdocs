@@ -1,4 +1,11 @@
-site_name: My Docs
+site_name: CS Route Docs
+site_url: https://andy-xiaokang.github.io/my-mkdocs/
+site_author: Andy-xiaokang
+
+repo_name: my-mkdocs
+repo_url: https://github.com/andy-xiaokang/my-mkdocs/
+
+copyright: Copyright &copy; 2023-present <a href="https://github.com/andy-xiaokang" target="_blank" rel="noopener noreferrer">Andy-xiaokang</a>
 theme:
   name: material
 
@@ -84,6 +91,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Andy-xiaokang/my-mkdocs
+    # - icon: fontawesome/solid/paper-plane
+    #   link: mailto:x2177877404@gmail.com
 
 extra_javascript:
   - javascripts/mathjax.js
