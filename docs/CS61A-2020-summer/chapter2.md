@@ -745,3 +745,8 @@ True
 >>> s.intersection({6, 5, 4, 3})
 {3, 4}
 ```
+
+## A question about instance and object
+!!! note "What is the difference between an instance and an object"
+    [**an instance of a class and an object mean the same thing and can often be used interchangeably**](https://stackoverflow.com/questions/2885385/what-is-the-difference-between-an-instance-and-an-object)
+![截屏2023-08-21 11.00.05](https://raw.githubusercontent.com/Andy-xiaokang/Picgo/master/images/%E6%88%AA%E5%B1%8F2023-08-21%2011.00.05.png)

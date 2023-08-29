@@ -3,6 +3,8 @@
     some easily forgotten commands and very important knowledge for shell 
 
 ## Using the shell
+[键盘特殊符号中英文名称对照表](https://ajiew.me/keyboard-special-symbols/)
+
 |symbol |English |meaning |
 |:---:|:---:|:---:|
 |`.`|dot |current working directory|

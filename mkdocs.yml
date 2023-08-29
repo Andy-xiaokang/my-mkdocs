@@ -1,11 +1,10 @@
 site_name: CS Route Docs
 site_url: https://andy-xiaokang.github.io/my-mkdocs/
 site_author: Andy-xiaokang
-
 repo_name: my-mkdocs
 repo_url: https://github.com/andy-xiaokang/my-mkdocs/
+copyright: Copyright &copy; 2023-05-present <a href="https://github.com/andy-xiaokang" target="_blank" rel="noopener noreferrer">Andy-xiaokang</a>
 
-copyright: Copyright &copy; 2023-present <a href="https://github.com/andy-xiaokang" target="_blank" rel="noopener noreferrer">Andy-xiaokang</a>
 theme:
   name: material
 
@@ -57,8 +56,8 @@ markdown_extensions:
 
 
 nav:
-  - CSDIY课程路线: "CSDIY_ROUTE.md"
-  - 前言: "index.md"
+  - CSDIY课程路线: "index.md"
+  - mkdocs_markdown_syntax: "mkdocs_markdownsyntax.md"
   - MIT_missing&practical_skills:
       - markdown_tutorial: "MIT_missing&practical_skills/markdown_tutorial.md"
       - git&github: "MIT_missing&practical_skills/git_learning.md"
@@ -85,14 +84,31 @@ nav:
       - chapter1: "CS61A-2020-summer/chapter1.md"
       - chapter2: "CS61A-2020-summer/chapter2.md"
       - chapter4: "CS61A-2020-summer/chapter4.md"
-
+  - Computer-English:
+      - Unit1: "Computer_English/Unit1.md" 
+      - Unit2: "Computer_English/Unit2.md" 
+      - Unit3: "Computer_English/Unit3.md" 
+      - Unit4: "Computer_English/Unit4.md" 
+      - Unit5: "Computer_English/Unit5.md" 
+      - Unit6: "Computer_English/Unit6.md" 
+      - Unit7: "Computer_English/Unit7.md" 
+      - Unit8: "Computer_English/Unit8.md" 
+      - Unit9: "Computer_English/Unit9.md" 
+      - Unit10: "Computer_English/Unit10.md" 
+      - Unit11: "Computer_English/Unit11.md" 
+      - Unit12: "Computer_English/Unit12.md" 
+  - ETC: 
+      - mactips: "etc/mactips.md"
+      - bugs&questions: "etc/bugs.md"
+      - terminology: "etc/terminology.md"
+      - prose: "etc/prose.md"
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Andy-xiaokang/my-mkdocs
-    # - icon: fontawesome/solid/paper-plane
-    #   link: mailto:x2177877404@gmail.com
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:x2177877404@gmail.com
 
 extra_javascript:
   - javascripts/mathjax.js
