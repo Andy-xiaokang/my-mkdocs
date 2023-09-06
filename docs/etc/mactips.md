@@ -34,4 +34,3 @@
 * `command + delete` delete a line
 ## configuration
 ### [mac set up guide](https://sourabhbajaj.com/mac-setup/)
-

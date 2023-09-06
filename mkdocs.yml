@@ -1,4 +1,4 @@
-site_name: CS Route Docs
+site_name: CSDIY Route Docs
 site_url: https://andy-xiaokang.github.io/my-mkdocs/
 site_author: Andy-xiaokang
 repo_name: my-mkdocs
@@ -83,6 +83,7 @@ nav:
   - CS61A-2020-summer:
       - chapter1: "CS61A-2020-summer/chapter1.md"
       - chapter2: "CS61A-2020-summer/chapter2.md"
+      - chapter3: "CS61A-2020-summer/chapter3.md"
       - chapter4: "CS61A-2020-summer/chapter4.md"
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 
