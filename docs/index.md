@@ -5,9 +5,9 @@
 - [x] [CS50P](https://github.com/Andy-xiaokang/CS50)
 - [ ] Coursera duke introductory C
 - [ ] Stanford CS106L Standard C++ programming
-- [ ] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
+- [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
 ## 数据结构和算法
-- [ ] UCB CS61B
+- [ ] [UCB CS61B](https://github.com/Andy-xiaokang/CS61B)
 - [ ] Coursera Algorithm I & II
 ## 体系结构
 - [ ] Coursera Nand2tetris
