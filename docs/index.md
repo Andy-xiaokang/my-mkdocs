@@ -7,10 +7,10 @@
 - [ ] Stanford CS106L Standard C++ programming
 - [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
 ## 数据结构和算法
-- [ ] [UCB CS61B](https://github.com/Andy-xiaokang/CS61B)
-- [ ] Coursera Algorithm I & II
+- [ ] UCB CS61B 当Java入门看了
+- [ ] [Coursera Algorithm I & II](https://github.com/Andy-xiaokang/Princeton-Algorithms)
 ## 体系结构
-- [ ] Coursera Nand2tetris
+- [ ] [Coursera Nand2tetris](https://github.com/Andy-xiaokang/Nand_to_Tetris)
 - [ ] UCB CS61C
 - [ ] CMU 15-213: CSAPP
 ## 操作系统

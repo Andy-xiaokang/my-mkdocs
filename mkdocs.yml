@@ -88,16 +88,7 @@ nav:
   - CS61B-2018-sp:
       - Introduction_to_java: "CS61B-2018-spring/Introduction_to_java.md"
       - Lists: "CS61B-2018-spring/Lists.md"
-      - Testing: "CS61B-2018-spring/Testing.md"
-      - Inheritance&Implements: "CS61B-2018-spring/inheritance&implements.md"
-      - Generics && Autoboxing: "CS61B-2018-spring/generics&autoboxing.md"
-      - Exceptions, Iterators, Iterables, Object Methods: "CS61B-2018-spring/exceptions&iterators&iterables&objectmethods.md"
-      - Packages And Access Control: "CS61B-2018-spring/packages&accesscontrol.md"
-      - Efficient Programming: "CS61B-2018-spring/efficient_programming.md"
-      - Disjoint Sets: "CS61B-2018-spring/disjoint_sets.md"
-      - ADTs: "CS61B-2018-spring/ADTs.md"
-      - Balanced Trees: "CS61B-2018-spring/balanced_trees.md"
-      - Hashing: "CS61B-2018-spring/hashing.md"
+
       
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 

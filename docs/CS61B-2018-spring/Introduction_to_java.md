@@ -13,6 +13,7 @@
 One of the most important features of Java is that all variables and expressions have a so-called static type. Java variables can contain values of that type, and only that type. Furthermore, the type of a variable can never change.  
 In addition to providing additional error checking, static types also let the programmer know exactly what sort of object he or she is working with.  
 To summarize, static typing has the following advantages:  
+
 * The compiler ensures that all types are compatible, making it easier for the programmer to debug their code.
 * Since the code is guaranteed to be free of type errors, users of your compiled programs will never run into type errors. For example, Android apps are written in Java, and are typically distributed only as .class files, i.e. in a compiled format. As a result, such applications should never crash due to a type error since they have already been checked by the compiler.  
 * Every variable, parameter, and function has a declared type, making it easier for a programmer to understand and reason about code.
