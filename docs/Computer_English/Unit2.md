@@ -23,3 +23,6 @@
 |preempt|	抢先，先占|
 
 ## Section C System organization
+|||
+|:--:|:--:|
+|||

@@ -32,5 +32,48 @@
 * [mac 的 启动组合键](https://support.apple.com/zh-cn/HT201255)
 * `option +delete`  delete a word
 * `command + delete` delete a line
+* `enter` rename the file or folder
+
+
 ## configuration
 ### [mac set up guide](https://sourabhbajaj.com/mac-setup/)
+### [my dotfiles](https://github.com/Andy-xiaokang/dotfiles)  
+### [some new mac settings](https://www.youtube.com/watch?v=WbklMGq59DU)  
+
+## change user home folder name `~`  
+### [change home folder name](https://support.apple.com/zh-cn/HT201548)  
+### [ennable root user login](https://support.apple.com/zh-cn/HT204012)  
+after log out or restart select others  
+then user name fill in `root`  
+password fill in password for `root`  
+
+## use time machine backup system and replace SSD  
+### [create external booter](https://support.apple.com/zh-cn/HT201372)  
+### [youtube replace SSD reference](https://www.youtube.com/watch?v=KT3IKRYqEJU&list=PLXNz0NSnoTFYvmbM0W1DWUuUWo20cQYN9)  
+### [use time machine backup mac](https://support.apple.com/zh-cn/HT201250)  
+after backup when restart the new mac select use time machine restore datas  
+### [mac 启动组合键](https://support.apple.com/zh-cn/102603)  
+
+## proxy
+### telegram 
+data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the port for clashX)
+### Spotify
+when counter with country and region are different from your infrmation  
+use proxy in the login interface go settings  
+use proxy socks5 host: 127.0.0.1   port: 7890  
+### [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D)  
+to let other devices to go though the GFW without download clash and purchase proxy service  
+* let your Computer and devices connected to the same LAN  
+* turn on the allow lan button of clashX
+* open the network settings and remember the ip address 
+* open ipad network settings -> proxy configuration -> mannual select
+* fill in the ip address and port is 7890 (clashX port)  
+
+## chatgpt
+* [webCatalog](https://webcatalog.io/en/)  
+    Transform websites into desktop apps with WebCatalog, and access a wealth of exclusive apps for Mac,  
+    then you can pack the chatgpt website in local and revoke chatgpt with Alfred  
+* [SMS activate](https://sms-activate.org/en)  
+    register a chapgpt account then you can use the free chatgpt version.
+
+
