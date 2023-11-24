@@ -5,7 +5,8 @@ In vscode settings.json add `"vim.mouseSelectionGoesIntoVisualMode": false,` to 
 
 ## Python
 ### After changing user folder pyenv fault
-reinstall python with the pyenv 
+reinstall python with the pyenv  
+
 * `pyenv uninstall 3.11.3` you will find the `~/.pyenv/versions` remove 3.11.3
 * then reinstall `pyenv install 3.11.3` 
 * use `which python` and `where python` to test if pyenv work.  

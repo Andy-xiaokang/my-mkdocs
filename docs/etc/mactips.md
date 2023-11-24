@@ -23,6 +23,8 @@
 * [AppCleaner](https://freemacsoft.net/appcleaner/)  
     AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 ### software reference website 
+* [appstorrent](https://appstorrent.ru/)
+* [xclient](https://xclient.info/s/)
 
 ## shortcuts 
 * cheatsheet `command` 2s view the shortcuts of application's menu bar 
@@ -63,6 +65,7 @@ use proxy in the login interface go settings
 use proxy socks5 host: 127.0.0.1   port: 7890  
 ### [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D)  
 to let other devices to go though the GFW without download clash and purchase proxy service  
+
 * let your Computer and devices connected to the same LAN  
 * turn on the allow lan button of clashX
 * open the network settings and remember the ip address 
@@ -75,5 +78,7 @@ to let other devices to go though the GFW without download clash and purchase pr
     then you can pack the chatgpt website in local and revoke chatgpt with Alfred  
 * [SMS activate](https://sms-activate.org/en)  
     register a chapgpt account then you can use the free chatgpt version.
+* proxy group  add `- DOMAIN-SUFFIX,chat.openai.com,动画疯` in the configuration file, the ip address will be changed to taiwan to use ChatGpt, and ban **auto update** in 配置/托管配置
+  
 
 

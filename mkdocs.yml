@@ -19,6 +19,8 @@ theme:
   features:
     - content.code.copy
     - content.tabs.link
+    - search.suggest
+    - search.highlight
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -58,7 +60,7 @@ markdown_extensions:
 nav:
   - CSDIY课程路线: "index.md"
   - mkdocs markdown syntax: "mkdocs_markdownsyntax.md"
-  - MITmissing&&practical skills:
+  - MITmissing && practical skills:
       - markdown tutorial: "MIT_missing&practical_skills/markdown_tutorial.md"
       - git&github: "MIT_missing&practical_skills/git_learning.md"
       - shell: "MIT_missing&practical_skills/shell_learning.md"
@@ -68,6 +70,21 @@ nav:
       - Version control(Git): "MIT_missing&practical_skills/Git.md"
       - Metaprogramming: "MIT_missing&practical_skills/metaprogramming.md"
       - Docker: "MIT_missing&practical_skills/docker.md"
+  - CS61A-2020-summer:
+      - chapter1: "CS61A-2020-summer/chapter1.md"
+      - chapter2: "CS61A-2020-summer/chapter2.md"
+      - chapter3: "CS61A-2020-summer/chapter3.md"
+      - chapter4: "CS61A-2020-summer/chapter4.md"
+  - Computer-Networking:
+      - chapter1: "Computer_Networking/chapter1.md"
+      - chapter2: "Computer_Networking/chapter2.md"
+      - chapter3: "Computer_Networking/chapter3.md"
+      - chapter4: "Computer_Networking/chapter4.md"
+      - chapter5: "Computer_Networking/chapter5.md"
+      - chapter6: "Computer_Networking/chapter6.md"
+      - chapter7: "Computer_Networking/chapter7.md"
+      - chapter8: "Computer_Networking/chapter8.md"
+
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"
@@ -80,11 +97,7 @@ nav:
       - week2: "CS50P/week2.md"
       - week3: "CS50P/week3.md"
       - week4: "CS50P/week4.md"
-  - CS61A-2020-summer:
-      - chapter1: "CS61A-2020-summer/chapter1.md"
-      - chapter2: "CS61A-2020-summer/chapter2.md"
-      - chapter3: "CS61A-2020-summer/chapter3.md"
-      - chapter4: "CS61A-2020-summer/chapter4.md"
+
   - CS61B-2018-sp:
       - Introduction_to_java: "CS61B-2018-spring/Introduction_to_java.md"
       - Lists: "CS61B-2018-spring/Lists.md"
@@ -112,9 +125,15 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Andy-xiaokang/my-mkdocs
-    - icon: fontawesome/solid/paper-plane
+      link: https://github.com/Andy-xiaokang
+    - icon: fontawesome/solid/envelope
       link: mailto:x2177877404@gmail.com
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/KangX2177877404
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/channels/@andy_98367
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/Andy_xiaokang
 
 extra_javascript:
   - javascripts/mathjax.js

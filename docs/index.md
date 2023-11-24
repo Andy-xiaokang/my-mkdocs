@@ -3,14 +3,14 @@
 - [x] MIT-missing semester
 - [x] [CS50X](https://github.com/Andy-xiaokang/CS50)
 - [x] [CS50P](https://github.com/Andy-xiaokang/CS50)
-- [ ] Coursera duke introductory C
+- [ ] C
 - [ ] Stanford CS106L Standard C++ programming
 - [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
 ## 数据结构和算法
 - [ ] UCB CS61B 当Java入门看了
 - [ ] [Coursera Algorithm I & II](https://github.com/Andy-xiaokang/Princeton-Algorithms)
 ## 体系结构
-- [ ] [Coursera Nand2tetris](https://github.com/Andy-xiaokang/Nand_to_Tetris)
+- [x] [Coursera Nand2tetris](https://github.com/Andy-xiaokang/Nand_to_Tetris)
 - [ ] UCB CS61C
 - [ ] CMU 15-213: CSAPP
 ## 操作系统
@@ -19,7 +19,7 @@
 ## 计算机系统安全
 - [ ] UCB CS161
 ## 计算机网络
-- [ ] Computer Networking: A top-down approach
+- [ ] [Computer Networking: A top-down approach](https://github.com/Andy-xiaokang/Computer-Networking)
 - [ ] Stanford CS144: Computer Network
 ## web 开发
 - [ ] MIT web development course
