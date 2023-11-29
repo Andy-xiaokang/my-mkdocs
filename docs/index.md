@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # CSDIY 课程路线
 ## 编程入门
 - [x] MIT-missing semester

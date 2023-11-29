@@ -65,6 +65,7 @@ use proxy in the login interface go settings
 use proxy socks5 host: 127.0.0.1   port: 7890  
 ### [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D)  
 to let other devices to go though the GFW without download clash and purchase proxy service  
+and you can turn off the DHCP 
 
 * let your Computer and devices connected to the same LAN  
 * turn on the allow lan button of clashX
@@ -72,13 +73,23 @@ to let other devices to go though the GFW without download clash and purchase pr
 * open ipad network settings -> proxy configuration -> mannual select
 * fill in the ip address and port is 7890 (clashX port)  
 
-## chatgpt
+## [chatgpt](https://chat.openai.com/)
 * [webCatalog](https://webcatalog.io/en/)  
     Transform websites into desktop apps with WebCatalog, and access a wealth of exclusive apps for Mac,  
     then you can pack the chatgpt website in local and revoke chatgpt with Alfred  
 * [SMS activate](https://sms-activate.org/en)  
     register a chapgpt account then you can use the free chatgpt version.
 * proxy group  add `- DOMAIN-SUFFIX,chat.openai.com,动画疯` in the configuration file, the ip address will be changed to taiwan to use ChatGpt, and ban **auto update** in 配置/托管配置
+
+## [picture bed](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1)
+upload image you can  
+
+1. use **PicGo** extension for vscode use `option+command+u` to upload the image  
+      1. select extension->installed->PicGo->settings: `picgo> pic bed> current: smms`
+      2. `picgo> pic bed> smms> tokens: `  add your [sm.ms token](https://smms.app/home/apitoken) 
+2. [use github for your picture bed (not recommend )](https://juejin.cn/post/7031461637986975757)    
+
+
   
 
 

@@ -21,6 +21,9 @@ theme:
     - content.tabs.link
     - search.suggest
     - search.highlight
+    - navigation.footer
+    
+    
 
 markdown_extensions:
   - pymdownx.arithmatex:
