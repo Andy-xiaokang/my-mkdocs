@@ -27,6 +27,7 @@ theme:
     
 
 markdown_extensions:
+  - meta
   - pymdownx.arithmatex:
       generic: true
   - admonition
