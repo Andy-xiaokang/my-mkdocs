@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter2 Application layer
 ## 2.1 Principles of Applications  
 ### Processes communicating
@@ -50,9 +54,16 @@ IMAP: pull email from mail sever to mail client
 **local DNS name servers**: when host makes DNS query, it is sent to its local DNS server   
 ![20231126221420](https://s2.loli.net/2023/11/26/x9Xoan3NL4sm1JV.png)  
 ![20231126221720](https://s2.loli.net/2023/11/26/rKTzHA9gECG67pM.png)  
+![20231201164719](https://s2.loli.net/2023/12/01/IGhz4klOoQNyv8Z.png)
+`nslookup -NS domain_name` can return the authoritative DNS of the domain_name  
+`nslookup domain_name` can return the ip of the domain_name  
 
 ## 2.5 Sockets programming
-### socket programming with UDP
+### socket programming with UDP  
+UDP client:  
+![20231129201350](https://s2.loli.net/2023/11/29/L1JYaNdqizkfrt6.png)  
+UDP server:  
+![20231129201457](https://s2.loli.net/2023/11/29/3bLkAWr1qFwRJsx.png)
 UDP: no 'connection' between client and server  
 
 * no handshaking before sending data  
@@ -63,6 +74,12 @@ UDP: no 'connection' between client and server
 provides unreliable transfer of a groups of bytes (“a datagram”), from client to server  
 data from different clients can be received on the same socket  
 the application must explicitly specify the IP destination address and port number for each group of bytes written into a socket  
+
+### socket programming with TCP 
+TCP client:  
+![20231129201624](https://s2.loli.net/2023/11/29/ojQxeTDKvACuMPG.png)  
+TCP server:  
+![20231129201731](https://s2.loli.net/2023/11/29/Ia6p8QdHiS1VYUl.png)
 
 TCP:  
 `socket(AF_INET, SOCK_STREAM)` creates this type of socket  

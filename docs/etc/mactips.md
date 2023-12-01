@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mac tips 
 ## good software
 ### system efficiency tool

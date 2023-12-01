@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter 1: [Building Abstractions with Functions](http://www.composingprograms.com/pages/11-getting-started.html)
 ## 1.1 Getting Started
 ### [1.1.4](http://www.composingprograms.com/pages/11-getting-started.html#first-example)

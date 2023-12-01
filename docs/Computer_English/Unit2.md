@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Unit 2 Computer Architecture
 ## section A Computer Hardware
 |||
@@ -25,4 +29,10 @@
 ## Section C System organization
 |||
 |:--:|:--:|
-|||
+|repository|仓库|
+|tier|层|
+|redundancy|冗余|
+|inconsistency|不一致|
+|synchrony|同时性|
+|rollback|回滚，回退|
+|subvert|颠覆，暗中破坏|

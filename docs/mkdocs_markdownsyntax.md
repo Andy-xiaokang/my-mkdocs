@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Reference
 Here are some markdown_extensions from [reference](https://squidfunk.github.io/mkdocs-material/reference/) page, I think it may be enough for me to build my online docs. for more extensions visit [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). a design principle from philosophy from getting started page draw my attention. 
 > **It's just markdown**: ==focus on the content of your documentation== and create a professional static site in minutes.

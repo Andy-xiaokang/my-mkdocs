@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter 3: Interpreting Computer Programs
 ## [3.2 Functional Programming](http://www.composingprograms.com/pages/32-functional-programming.html)
 ### [scheme specification](https://inst.eecs.berkeley.edu/~cs61a/su20/articles/scheme-spec.html)

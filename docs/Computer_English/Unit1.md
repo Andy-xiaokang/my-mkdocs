@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Unit1 Computer and Computer Science
 There are some words selected from **Computer English Fifth Edition China Machine Press** when I am reading this book.
 ## Section A Computer overview

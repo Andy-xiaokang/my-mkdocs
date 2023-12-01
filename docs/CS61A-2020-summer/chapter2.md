@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chapter 2: Building Abstraction with Data
 ## 2.1 Introduction
 ### 2.1.1 Native Data Types
