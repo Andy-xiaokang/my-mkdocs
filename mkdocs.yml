@@ -10,7 +10,9 @@ theme:
   custom_dir: overrides
 
   font:
-    text: Roboto
+    text: Roboto Slab
+    code: Roboto Mono
+    # text: Roboto
     # text: Inconsolata
     # text: Noto Serif Simplified Chinese
     # text: Lora 
@@ -22,7 +24,8 @@ theme:
     - content.tabs.link
     - search.suggest
     - search.highlight
-    - navigation.footer
+    - header.autohide
+    # - navigation.footer
     
     
 
@@ -121,7 +124,7 @@ nav:
       - Unit10: "Computer_English/Unit10.md" 
       - Unit11: "Computer_English/Unit11.md" 
       - Unit12: "Computer_English/Unit12.md" 
-  - ETC: 
+  - etc: 
       - mactips: "etc/mactips.md"
       - bugs&questions: "etc/bugs.md"
       - terminology: "etc/terminology.md"

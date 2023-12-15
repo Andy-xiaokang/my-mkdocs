@@ -93,7 +93,12 @@ upload image you can
       2. `picgo> pic bed> smms> tokens: `  add your [sm.ms token](https://smms.app/home/apitoken) 
 2. [use github for your picture bed (not recommend )](https://juejin.cn/post/7031461637986975757)    
 
+## auto fill passphase for ssh  
+`ssh-add` then fill in the passphase  
+`ssh-agent` to auto fill passphase  
 
-  
-
+## set off ipv6 Wi-Fi 
+`sudo networksetup -listallnetworkservices`  
+`sudo networksetup -setv6off Wi-Fi`  
+then the wifi ip will changed from ipv6 to ipv4  
 

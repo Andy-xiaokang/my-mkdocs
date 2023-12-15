@@ -13,6 +13,7 @@ comments: true
 ## 数据结构和算法
 - [ ] UCB CS61B 当Java入门看了
 - [ ] [Coursera Algorithm I & II](https://github.com/Andy-xiaokang/Princeton-Algorithms)
+- [ ] MIT Introduction to Algorithms 6.006
 ## 体系结构
 - [x] [Coursera Nand2tetris](https://github.com/Andy-xiaokang/Nand_to_Tetris)
 - [ ] UCB CS61C

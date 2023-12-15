@@ -3,7 +3,7 @@ comments: true
 ---
 
 # Chapter 3 The transport layer
-## Introduction and transport-layer services  
+## 3.1 Introduction and transport-layer services  
 TCP: transmission control protocol  
 
 * reliable, in-order delivery
@@ -19,14 +19,14 @@ UDP: User datagram protocol
     * delay guarantees
     * bandwith guarantees
 
-## Multiplexing and Demultiplexing
+## 3.2 Multiplexing and Demultiplexing
 ![20231203162315](https://s2.loli.net/2023/12/03/18CFrze9BGHWQ4q.png)  
 ![20231203162344](https://s2.loli.net/2023/12/03/cbr1qe9NJwtHW6X.png)  
 ![20231203162413](https://s2.loli.net/2023/12/03/jU9fFdZtqkxGAvo.png)  
 ![20231203162444](https://s2.loli.net/2023/12/03/cxi6TdpnmEaFtw9.png)  
 
-## Connectionless Transport UDP  
-## Principles of reliable data transfer  
+## 3.3 Connectionless Transport UDP  
+## 3.4 Principles of reliable data transfer  
 ### Principles of Reliable Data Transfer  
 ![20231203212241](https://s2.loli.net/2023/12/03/b8SLKUe9f4GzIwN.png)  
 ![20231203212338](https://s2.loli.net/2023/12/03/4k9FQTBtrAmSouy.png)  
@@ -42,7 +42,7 @@ UDP: User datagram protocol
 ![20231209192153](https://s2.loli.net/2023/12/09/fWE1oyQHVZDYeNl.png)  
 
 
-## connection-oriented transport: TCP
+## 3.5 connection-oriented transport: TCP
 ### tcp segment structure  
 ![20231209190516](https://s2.loli.net/2023/12/09/sbK7u1rqEToRvNQ.png)
 * **sequence numbers:** byte stream "number" of first byte in segment's data  
@@ -53,7 +53,7 @@ UDP: User datagram protocol
 ![20231209191205](https://s2.loli.net/2023/12/09/DygLcYxlfCHG68W.png)  
 ### flow control  
 
-## congestion control  
+## 3.6 congestion control  
 ### slow start  
 initial cwnd = 1 then 2 4 8 ... exp  
 ### congestion avoidance  
