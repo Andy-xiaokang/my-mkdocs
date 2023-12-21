@@ -15,3 +15,8 @@
 * every line of assemble language is corresponding to a machine code. machine code is corresponding to the perspective of Computer, character and symbol(String) corresponding to the perspective of our human. symbolic programming. symbolic abstraction.  
 * data register, address register, memory register.  
 * assemble, assembler, 
+
+## Computer Network  
+* web world wide web  
+* WiFi: 802.11 wireless local area network(WLAN)
+* 

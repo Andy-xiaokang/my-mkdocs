@@ -12,12 +12,9 @@ theme:
   font:
     text: Roboto Slab
     code: Roboto Mono
-    # text: Roboto
     # text: Inconsolata
     # text: Noto Serif Simplified Chinese
     # text: Lora 
-    # text: PT Serif
-    # text: EB Garamond
 
   features:
     - content.code.copy
@@ -27,6 +24,21 @@ theme:
     - header.autohide
     # - navigation.footer
     
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
     
 
 markdown_extensions:
@@ -92,7 +104,6 @@ nav:
       - chapter6: "Computer_Networking/chapter6.md"
       - chapter7: "Computer_Networking/chapter7.md"
       - chapter8: "Computer_Networking/chapter8.md"
-
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"
@@ -105,12 +116,9 @@ nav:
       - week2: "CS50P/week2.md"
       - week3: "CS50P/week3.md"
       - week4: "CS50P/week4.md"
-
   - CS61B-2018-sp:
       - Introduction_to_java: "CS61B-2018-spring/Introduction_to_java.md"
       - Lists: "CS61B-2018-spring/Lists.md"
-
-      
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 
       - Unit2: "Computer_English/Unit2.md" 
@@ -142,6 +150,9 @@ extra:
       link: https://discord.com/channels/@andy_98367
     - icon: fontawesome/brands/telegram
       link: https://t.me/Andy_xiaokang
+  # analytics:
+  #   provider: google
+  #   property: G-XV5Q8EMHZ4
 
 extra_javascript:
   - javascripts/mathjax.js

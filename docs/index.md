@@ -24,7 +24,7 @@ comments: true
 ## 计算机系统安全
 - [ ] UCB CS161
 ## 计算机网络
-- [ ] [Computer Networking: A top-down approach](https://github.com/Andy-xiaokang/Computer-Networking)
+- [x] [Computer Networking: A top-down approach](https://github.com/Andy-xiaokang/Computer-Networking)
 - [ ] Stanford CS144: Computer Network
 ## web 开发
 - [ ] MIT web development course
