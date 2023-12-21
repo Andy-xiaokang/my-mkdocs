@@ -41,7 +41,6 @@ theme:
         name: Switch to light mode
 
 plugins: 
-  - search
   - git-revision-date-localized
 
 
