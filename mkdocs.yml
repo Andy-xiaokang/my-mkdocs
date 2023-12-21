@@ -39,7 +39,11 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-    
+
+plugins: 
+  - search
+  - git-revision-date-localized
+
 
 markdown_extensions:
   - meta
