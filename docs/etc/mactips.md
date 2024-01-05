@@ -67,7 +67,7 @@ after backup when restart the new mac select use time machine restore datas
 ## proxy
 * telegram 
 data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the port for clashX)
-* Spotify
+### Spotify
 when counter with country and region are different from your information  
 use proxy in the login interface go settings  
 use proxy socks5 host: 127.0.0.1   port: 7890  
