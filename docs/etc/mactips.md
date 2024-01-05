@@ -15,6 +15,9 @@ comments: true
     Customize Mac Menu Keyboard Shortcuts
 * [rectangle](https://rectangleapp.com)  
     Move and resize windows in macOS using keyboard shortcuts or snap areas
+* [webCatalog](https://webcatalog.io/en/desktop/)
+    Transform websites into desktop apps with WebCatalog Desktop, and access a wealth of exclusive apps for Mac, Windows, Linux. Use spaces to organize apps, switch between multiple accounts with ease, and boost your productivity like never before.  
+    I can add X, spotify, chatgpt etc to local and corordinate with alfread to swith those app local
 
 ### system experience enhancement tools
 * [ClashX](https://github.com/yichengchen/clashX)  
@@ -39,43 +42,41 @@ comments: true
 * `option +delete`  delete a word
 * `command + delete` delete a line
 * `enter` rename the file or folder
+* `fn` switch input method
 
 
 ## configuration
-### [mac set up guide](https://sourabhbajaj.com/mac-setup/)
-### [my dotfiles](https://github.com/Andy-xiaokang/dotfiles)  
-### [some new mac settings](https://www.youtube.com/watch?v=WbklMGq59DU)  
+* [mac set up guide](https://sourabhbajaj.com/mac-setup/)
+* [my dotfiles](https://github.com/Andy-xiaokang/dotfiles)  
+* [some new mac settings](https://www.youtube.com/watch?v=WbklMGq59DU)  
 
 ## change user home folder name `~`  
-### [change home folder name](https://support.apple.com/zh-cn/HT201548)  
-### [ennable root user login](https://support.apple.com/zh-cn/HT204012)  
+* [change home folder name](https://support.apple.com/zh-cn/HT201548)  
+* [ennable root user login](https://support.apple.com/zh-cn/HT204012)  
 after log out or restart select others  
 then user name fill in `root`  
 password fill in password for `root`  
 
 ## use time machine backup system and replace SSD  
-### [create external booter](https://support.apple.com/zh-cn/HT201372)  
-### [youtube replace SSD reference](https://www.youtube.com/watch?v=KT3IKRYqEJU&list=PLXNz0NSnoTFYvmbM0W1DWUuUWo20cQYN9)  
-### [use time machine backup mac](https://support.apple.com/zh-cn/HT201250)  
+* [create external booter](https://support.apple.com/zh-cn/HT201372)  
+* [youtube replace SSD reference](https://www.youtube.com/watch?v=KT3IKRYqEJU&list=PLXNz0NSnoTFYvmbM0W1DWUuUWo20cQYN9)  
+* [use time machine backup mac](https://support.apple.com/zh-cn/HT201250)  
 after backup when restart the new mac select use time machine restore datas  
-### [mac 启动组合键](https://support.apple.com/zh-cn/102603)  
+* [mac 启动组合键](https://support.apple.com/zh-cn/102603)  
 
 ## proxy
-### telegram 
+* telegram 
 data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the port for clashX)
-### Spotify
-when counter with country and region are different from your infrmation  
+* Spotify
+when counter with country and region are different from your information  
 use proxy in the login interface go settings  
 use proxy socks5 host: 127.0.0.1   port: 7890  
-### [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D)  
-to let other devices to go though the GFW without download clash and purchase proxy service  
-and you can turn off the DHCP 
-
-* let your Computer and devices connected to the same LAN  
-* turn on the allow lan button of clashX
-* open the network settings and remember the ip address 
-* open ipad network settings -> proxy configuration -> mannual select
-* fill in the ip address and port is 7890 (clashX port)  
+* [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D), to let other devices to go though the GFW without download clash and purchase proxy service, and you can turn off the DHCP 
+    1. let your Computer and devices connected to the same LAN  
+    2. turn on the allow lan button of clashX
+    3. open the network settings and remember the ip address 
+    4. open ipad network settings -> proxy configuration -> mannual select
+    5. fill in the ip address and port is 7890 (clashX port)  
 
 ## [chatgpt](https://chat.openai.com/)
 * [webCatalog](https://webcatalog.io/en/)  
@@ -83,7 +84,7 @@ and you can turn off the DHCP
     then you can pack the chatgpt website in local and revoke chatgpt with Alfred  
 * [SMS activate](https://sms-activate.org/en)  
     register a chapgpt account then you can use the free chatgpt version.
-* proxy group  add `- DOMAIN-SUFFIX,chat.openai.com,动画疯` in the configuration file, the ip address will be changed to taiwan to use ChatGpt, and ban **auto update** in 配置/托管配置
+* proxy group  add `- DOMAIN-SUFFIX,chat.openai.com,动画疯` or `- DOMAIN-SUFFIX,chat.openai.com,电报吹水` in the configuration file, the ip address will be changed to taiwan to use ChatGpt, and ban **auto update** in 配置/托管配置
 
 ## [picture bed](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1)
 upload image you can  
@@ -102,3 +103,7 @@ upload image you can
 `sudo networksetup -setv6off Wi-Fi`  
 then the wifi ip will changed from ipv6 to ipv4  
 
+## font
+* iterm2 `Droid Sans Mono Slashed for Powerline`
+* terminal `SM Mono Regular`
+* mkdocs `Roboto Slab`

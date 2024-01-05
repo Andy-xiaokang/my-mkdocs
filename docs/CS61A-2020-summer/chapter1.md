@@ -3,6 +3,11 @@ comments: true
 ---
 
 # Chapter 1: [Building Abstractions with Functions](http://www.composingprograms.com/pages/11-getting-started.html)
+我从CS61A老师那里学到的哲学是  
+
+* 多做一些自己没有做过的事
+* [不要过分的看重测试和分数，你不必将每一件事都做到完美，但不要停下你前进的脚步，专注于学习、进步和毅力。你很快就能比过去多解决很多问题](https://www.youtube.com/watch?v=9DyfRMlyxfg&list=PLXNz0NSnoTFYS9g7M7uv2kvTWEf-mds2y) 
+* [don't compare with others](https://www.bilibili.com/video/BV1MV4y1W7T1/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=e2e75f57a7782b8c384c95ac9060a831)
 ## 1.1 Getting Started
 ### [1.1.4](http://www.composingprograms.com/pages/11-getting-started.html#first-example)
 **Statements & Expressions**. Python code consists of expressions and statements. Broadly, computer programs consist of instructions to either  

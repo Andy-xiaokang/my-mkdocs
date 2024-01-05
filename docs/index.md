@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# CSDIY 课程路线
+# [CSDIY](https://csdiy.wiki/) 课程路线
 ## 编程入门
 - [x] MIT-missing semester
 - [x] [CS50X](https://github.com/Andy-xiaokang/CS50)
@@ -40,3 +40,6 @@ comments: true
 ## 人工智能&深度学习（了解）
 - [ ] Harvard CS50: Introduction to AI with Python
 - [ ] Coursera: Deep Learning
+## PS  
+此网站搭建自[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)，模板、字体、颜色引用自[CSDIY](https://csdiy.wiki/)  
+**内容自定**，意在搭建一个记录自己成长，课程选自CSDIY的路线笔记本，希望几年后能看到一个截然不同的自己。

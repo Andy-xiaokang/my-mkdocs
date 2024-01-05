@@ -203,6 +203,26 @@ theme:
 ```
 ### Usage
 #### grouping code blocks
+```markdown title="grouping code blocks"
+=== "C"
+    ```c
+    #include<stdio.h>
+    int main(void)
+    {
+        printf("Hello World!\n");
+        return 0;
+    }
+    ```
+=== "C++"
+    ``` c++
+    #include <iostream>
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+```
+
 === "C"
     ```c
     #include<stdio.h>
