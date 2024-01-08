@@ -7,7 +7,7 @@ comments: true
 - [x] MIT-missing semester
 - [x] [CS50X](https://github.com/Andy-xiaokang/CS50)
 - [x] [CS50P](https://github.com/Andy-xiaokang/CS50)
-- [ ] Stanford CS106B Programming Abstractions In C++
+- [ ] [Stanford CS106B Programming Abstractions In C++](https://github.com/Andy-xiaokang/CS106B)
 - [ ] Stanford CS106L Standard C++ programming
 - [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
 ## 数据结构和算法

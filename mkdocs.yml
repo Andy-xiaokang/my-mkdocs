@@ -93,7 +93,7 @@ nav:
   - mkdocs markdown syntax: "mkdocs_markdownsyntax.md"
   - MITmissing && practical skills:
       - markdown tutorial: "MIT_missing&practical_skills/markdown_tutorial.md"
-      - git&github: "MIT_missing&practical_skills/git_learning.md"
+      - git && github: "MIT_missing&practical_skills/git_learning.md"
       - shell: "MIT_missing&practical_skills/shell_learning.md"
       - vim: "MIT_missing&practical_skills/vim_learning.md"
       - data wrangling: "MIT_missing&practical_skills/data_wrangling.md"
@@ -145,9 +145,10 @@ nav:
       - Unit12: "Computer_English/Unit12.md" 
   - etc: 
       - mactips: "etc/mactips.md"
-      - bugs&questions: "etc/bugs.md"
+      - bugs && questions: "etc/bugs.md"
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
+      - intimate relationships abstraction: "etc/reading.md"
 
 extra:
   social:

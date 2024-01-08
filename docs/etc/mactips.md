@@ -23,7 +23,8 @@ comments: true
 * [ClashX](https://github.com/yichengchen/clashX)  
     A rule based proxy For Mac base on [Clash](https://dreamacro.github.io/clash/).
 * [Adguard](https://adguard.com/en/welcome.html)  
-    Surf the Web ad-free and safely. Shield up!
+    Surf the Web ad-free and safely. Shield up!  
+    in settings open 助手 for safari and chrome.
 * [Bartender](https://www.macbartender.com/)  
     Bartender is an award-winning app for macOS that superpowers your menu bar, giving you total control over your menu bar items, what's displayed, and when, with menu bar items only showing when you need them.
     Bartender improves your workflow with quick reveal, search, custom hotkeys and triggers, and lots more.
@@ -70,7 +71,8 @@ data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the 
 ### Spotify
 when counter with country and region are different from your information  
 use proxy in the login interface go settings  
-use proxy socks5 host: 127.0.0.1   port: 7890  
+use proxy socks5 host: 127.0.0.1   port: 7890   
+
 * [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D), to let other devices to go though the GFW without download clash and purchase proxy service, and you can turn off the DHCP 
     1. let your Computer and devices connected to the same LAN  
     2. turn on the allow lan button of clashX
@@ -107,3 +109,11 @@ then the wifi ip will changed from ipv6 to ipv4
 * iterm2 `Droid Sans Mono Slashed for Powerline`
 * terminal `SM Mono Regular`
 * mkdocs `Roboto Slab`
+
+## keyboard 
+in settings keyboard -> keyboard `when stoke fn key, change input method`.  
+
+## store web resources
+* 视频下载：`yt-dlp`
+* `youtube-dl -a videos.txt`
+* 扒课程页面所有资源： `wget -mkEpnp --no-check-certificate`  链接
