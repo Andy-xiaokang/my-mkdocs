@@ -8,14 +8,12 @@ copyright: Copyright &copy; 2023-05-present <a href="https://github.com/andy-xia
 theme:
   name: material
   custom_dir: overrides
-
   font:
     text: Roboto Slab
     code: Roboto Mono
     # text: Inconsolata
     # text: Noto Serif Simplified Chinese
     # text: Lora 
-
   features:
     - content.code.copy
     - content.tabs.link
@@ -23,7 +21,6 @@ theme:
     - search.highlight
     - header.autohide
     # - navigation.footer
-    
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -40,7 +37,6 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-
 plugins: 
   - search
   - git-revision-date-localized:
@@ -50,7 +46,6 @@ plugins:
       enable_creation_date: true
       exclude:
         # - index.md
-
 
 markdown_extensions:
   - meta
@@ -86,7 +81,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.keys
   - pymdownx.smartsymbols
-
 
 nav:
   - CSDIY课程路线: "index.md"
@@ -148,7 +142,7 @@ nav:
       - bugs && questions: "etc/bugs.md"
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
-      - intimate relationships abstraction: "etc/reading.md"
+      - intimate relationships: "etc/reading.md"
 
 extra:
   social:
