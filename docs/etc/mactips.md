@@ -7,6 +7,8 @@ comments: true
 ### system efficiency tool
 * [Alfread](https://www.alfredapp.com/)  
     Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac.
+* [Homebrew](https://brew.sh/)  
+    The Missing Package Manager for macOS (or Linux)
 * [cheatsheet](https://www.mediaatelier.com/CheatSheet/)  
     CheatSheet is a free utility app that lets you see keyboard shortcuts with a press of a button. (CheatSheet has been discontinued because it no longer works with macOS 14 Sonoma. [KeyCue](https://www.ergonis.com/keycue/switching/cheatsheet) is still available.)
 * [maccy](https://github.com/p0deje/Maccy)  
@@ -15,9 +17,11 @@ comments: true
     Customize Mac Menu Keyboard Shortcuts
 * [rectangle](https://rectangleapp.com)  
     Move and resize windows in macOS using keyboard shortcuts or snap areas
-* [webCatalog](https://webcatalog.io/en/desktop/)
+* [webCatalog](https://webcatalog.io/en/desktop/)  
     Transform websites into desktop apps with WebCatalog Desktop, and access a wealth of exclusive apps for Mac, Windows, Linux. Use spaces to organize apps, switch between multiple accounts with ease, and boost your productivity like never before.  
     I can add X, spotify, chatgpt etc to local and corordinate with alfread to swith those app local
+* [Karabiner-Elements](https://karabiner-elements.pqrs.org/)  
+    A powerful and stable keyboard customizer for macOS.
 
 ### system experience enhancement tools
 * [ClashX](https://github.com/yichengchen/clashX)  
@@ -111,9 +115,20 @@ then the wifi ip will changed from ipv6 to ipv4
 * mkdocs `Roboto Slab`
 
 ## keyboard 
-in settings keyboard -> keyboard `when stoke fn key, change input method`.  
+* in settings keyboard -> keyboard `when stoke fn key, change input method`.  
+* in settings keyboard -> modifier keys(修饰键) -> `caps lock : escape`.  
+* in karabiner-elements  
+    * find all devices set `caps lock: escape` and `escape: caps lock`.
+    * Apple internal keyboard set `caps lock : escape` and `escape : caps lock`.  
+    * bluetooth usb host controller `caps lock : escape` and `escape: caps lock`.
+
 
 ## store web resources
 * 视频下载：`yt-dlp`
 * `youtube-dl -a videos.txt`
 * 扒课程页面所有资源： `wget -mkEpnp --no-check-certificate`  链接
+
+## mac reference website
+* [技术规格](https://support.apple.com/zh_CN/specs/maclaptops)
+* [command line tools 下载](https://sleele.com/2019/08/11/command-line-tools/)  
+

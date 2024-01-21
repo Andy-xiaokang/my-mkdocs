@@ -109,6 +109,16 @@ nav:
       - chapter6: "Computer_Networking/chapter6.md"
       - chapter7: "Computer_Networking/chapter7.md"
       - chapter8: "Computer_Networking/chapter8.md"
+  - CS106B:
+      - introduction: "CS106B/introduction.md"
+      - S1 C++ fundamentals: "CS106B/s1.md"
+      - S2 ADTs: "CS106B/s2.md"
+      - S3 Recursion and Big O: "CS106B/s3.md"
+      - S4 Recursive and Backtracking: "CS106B/s4.md"
+      - S5 Classes and Dynamic Memory: "CS106B/s5.md"
+      - S6 Memory Management,Pointers,and Linked Lists: "CS106B/s6.md"
+      - S7 Trees: "CS106B/s7.md"
+      - S8 Tree Encoding: "CS106B/s8.md"
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"
@@ -139,10 +149,12 @@ nav:
       - Unit12: "Computer_English/Unit12.md" 
   - etc: 
       - mactips: "etc/mactips.md"
+      - mac studio plan: "etc/studio.md"
       - bugs && questions: "etc/bugs.md"
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
       - intimate relationships: "etc/reading.md"
+      
 
 extra:
   social:
