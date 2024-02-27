@@ -26,12 +26,16 @@ comments: true
 ### system experience enhancement tools
 * [ClashX](https://github.com/yichengchen/clashX)  
     A rule based proxy For Mac base on [Clash](https://dreamacro.github.io/clash/).
+* [ClashX-Pro](https://github.com/Loyalsoldier/clash-rules/tree/master?tab=readme-ov-file).  
+    proxy-providers and rule-providers
 * [Adguard](https://adguard.com/en/welcome.html)  
     Surf the Web ad-free and safely. Shield up!  
     in settings open 助手 for safari and chrome.
 * [Bartender](https://www.macbartender.com/)  
     Bartender is an award-winning app for macOS that superpowers your menu bar, giving you total control over your menu bar items, what's displayed, and when, with menu bar items only showing when you need them.
     Bartender improves your workflow with quick reveal, search, custom hotkeys and triggers, and lots more.
+* [BetterTouchTool](https://folivora.ai/)  
+    BetterTouchTool is a great, feature packed app that allows you to customize various input devices on your Mac.
 * [AppCleaner](https://freemacsoft.net/appcleaner/)  
     AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 ### software reference website 
@@ -122,6 +126,9 @@ then the wifi ip will changed from ipv6 to ipv4
     * Apple internal keyboard set `caps lock : escape` and `escape : caps lock`.  
     * bluetooth usb host controller `caps lock : escape` and `escape: caps lock`.
 
+## github 免密push
+* [gh](https://github.com/cli/cli) `brew install gh`
+* `gh auth login` 按照提示采用 ssh  
 
 ## store web resources
 * 视频下载：`yt-dlp`
