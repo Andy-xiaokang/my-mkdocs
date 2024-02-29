@@ -126,7 +126,7 @@ then the wifi ip will changed from ipv6 to ipv4
     * Apple internal keyboard set `caps lock : escape` and `escape : caps lock`.  
     * bluetooth usb host controller `caps lock : escape` and `escape: caps lock`.
 
-## github 免密push
+## github 免密 push
 * [gh](https://github.com/cli/cli) `brew install gh`
 * `gh auth login` 按照提示采用 ssh  
 
@@ -139,3 +139,34 @@ then the wifi ip will changed from ipv6 to ipv4
 * [技术规格](https://support.apple.com/zh_CN/specs/maclaptops)
 * [command line tools 下载](https://sleele.com/2019/08/11/command-line-tools/)  
 
+## clashX-pro rule-set proxy-set
+由于最开始买的一家机场跑路，让我不得不在 github 上接触到了 [clashX-pro](https://github.com/Loyalsoldier/clash-rules), 对clashX pro 的 [proxy-providers](https://clash.wiki/configuration/outbound.html#proxy-providers-%E4%BB%A3%E7%90%86%E9%9B%86) 和 [rule-providers](https://clash.wiki/premium/rule-providers.html) 这两样功能产生了强烈兴趣，但同时也遇到了不少问题。  
+
+* `unmarshal errors` 可能是由于机场提供的链接并非是clash订阅链接，需要进行[订阅转换](https://acl4ssr-sub.github.io/)  
+    [常见错误](https://github.com/githubvpn007/ClashX?tab=readme-ov-file#%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF)
+    ![20240228204957](https://s2.loli.net/2024/02/28/4yiBOXN8GkFZEHx.png)
+* 除了 `proxy-providers` 的 `provider` 可以使用 `filter:` 字段外，`proxy-groups` 中也可以在使用 `use` 字段后使用 `filter` 字段，例如
+    ```yaml
+    proxy-providers:
+      provider2:
+        type: http
+        url: url2
+        interval: 86400
+        path: ./proxyset/provider2.yaml
+        filter: '^(?!.*12).*'  # golang 负向前瞻（negative lookahead）排除那些倍率为12 的很坑的节点
+        health-check:
+          enable: true
+          interval: 600
+          url: http://www.gstatic.com/generate_204
+
+
+    proxy-groups:
+      - name: 美国
+        type: url-test
+        url: http://www.gstatic.com/generate_204
+        interval: 500
+        use: 
+          - provider1
+        filter: '美国' # golang regrex 匹配外部代理集 provider1 中那些节点名称中包含美国的节点
+    ```
+* 还有其他很多小问题和功能可以探索，就不一一列举了
