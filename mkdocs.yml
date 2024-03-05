@@ -150,6 +150,7 @@ nav:
   - etc: 
       - mactips: "etc/mactips.md"
       - mac studio plan: "etc/studio.md"
+      - Mac from intel to arm: "etc/intel-to-arm.md"
       - bugs && questions: "etc/bugs.md"
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
