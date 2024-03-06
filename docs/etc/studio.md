@@ -42,3 +42,4 @@ comments: true
 * 升降桌对比传统桌子稳定性较差，或多或少会有一些晃动，高度升高这种表现更加明显 
 * 无线充电板有一点电流的滋滋声 
 * mac 内置触控板有手掌误触处理，但是 magic touchpad 没有，打字时手掌很容易误触识别为轻点（暂时不知道 BetterTouchTool 是否可以处理）
+* 从 intel 版本的 MacBook 迁移到 Arm 版的 Mac 后出现了很多问题。具体见[intel to arm](./intel-to-arm.md)
