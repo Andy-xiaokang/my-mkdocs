@@ -22,7 +22,8 @@ comments: true
     I can add X, spotify, chatgpt etc to local and corordinate with alfread to swith those app local
 * [Karabiner-Elements](https://karabiner-elements.pqrs.org/)  
     A powerful and stable keyboard customizer for macOS.
-
+* [qwerty learner](https://qwerty.kaiyi.cool/)
+    一个练习盲打和记忆单词的好工具
 ### system experience enhancement tools
 * [ClashX](https://github.com/yichengchen/clashX)  
     A rule based proxy For Mac base on [Clash](https://dreamacro.github.io/clash/).
@@ -76,7 +77,7 @@ after backup when restart the new mac select use time machine restore datas
 ## proxy
 * telegram 
 data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the port for clashX)
-### Spotify
+### Spotify 
 when counter with country and region are different from your information  
 use proxy in the login interface go settings  
 use proxy socks5 host: 127.0.0.1   port: 7890   
