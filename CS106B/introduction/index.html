@@ -977,6 +977,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lecture-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      lecture 15
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      lecture 16
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2025,6 +2043,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../etc/liferecord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    life record
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2078,6 +2117,24 @@
   <a href="#lecture-14" class="md-nav__link">
     <span class="md-ellipsis">
       lecture 14
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      lecture 15
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      lecture 16
     </span>
   </a>
   
@@ -2162,6 +2219,50 @@ when pass by reference, the argument and the variable passed in is the same thin
 <h2 id="lecture-14">lecture 14</h2>
 <p><img alt="20240116152007" src="https://s2.loli.net/2024/01/16/vFQNSnZ1tlIMche.png" />
 <img alt="20240116155221" src="https://s2.loli.net/2024/01/16/OcANMgjUb1qfFhv.png" /></p>
+<p>An object is an instance of a class
+<a href="https://blog.csdn.net/qinghezhen/article/details/9100079">C++ 中对象占用多大内存</a></p>
+<ul>
+<li>we refer to the variables within a class as its <strong>member variables.</strong></li>
+<li>we refer to the functions within a class as its <strong>member functions.</strong></li>
+<li>we often say that member variables define the <strong>state</strong> of an object, while member functions define the <strong>behaviors</strong> an object can perform. </li>
+<li>a function whose name matches the name of the class where it resides is a <strong>constructor function.</strong>  </li>
+<li>As a convention, we often start member variable names with underscores. Those variables will be accessible from every function in our implementation file, and this naming convention will help us distinguish them from local variables within those functions.</li>
+<li>Note that it's considered best practice not to issue a using <code>namespace std;</code> statement in our <code>quokka.h</code> file. <strong>If we did that, then that namespace would apply to every source file with an #include "quokka.h" directive</strong>. We instead prefer to qualify anything from the std namespace in our header file using the tedious std:: syntax.</li>
+</ul>
+<h2 id="lecture-15">lecture 15</h2>
+<ul>
+<li><strong>The Ampersand Operator Means Different Things in Different Contexts!</strong><ul>
+<li>When we use <code>&amp;</code> in a variable DECLARATION, that creates a REFERENCE.</li>
+<li>When we use <code>&amp;</code> on an ALREADY-EXISTING variable, that gives us its ADDRESS.</li>
+</ul>
+</li>
+<li><strong>The Asterisk Operator Means Different Things in Different Contexts!</strong><ul>
+<li>When we use <code>*</code> in a variable DECLARATION, that creates a POINTER.</li>
+<li>When we use <code>*</code> on an ALREADY-EXISTING variable, that DEREFERENCES our pointer. (In other words, it GOES to the address that our pointer is pointing to and then proceeds to operate on whatever variable it finds there.)</li>
+</ul>
+</li>
+<li>The square brackets operator in C++ acts as an offset whether applied to an array variable or an actual pointer</li>
+<li>Note that while an array might look a lot like a pointer, the key difference is that a pointer can be assigned a new value, causing it to point elsewhere. An array variable name, on the other hand, is bound to the array it represents and cannot be made to point elsewhere.</li>
+<li>When we apply an offset to an array (that's the index in square brackets), that tells C++ to go to the beginning of the array and skip forward a certain number of places in memory.</li>
+</ul>
+<h2 id="lecture-16">lecture 16</h2>
+<ul>
+<li>local variables die when we leave a function.</li>
+<li>Here are some key points about <code>new</code>:<ul>
+<li>The memory we set aside with <code>new</code> exists outside the stack frame for our function call, which means it will not die when we leave our function. Cool! Instead of existing in <strong><em>stack space</em></strong>, the stuff we create with <code>new</code> exists in what we call <strong><em>heap space</em></strong>.</li>
+<li>Because the memory set aside with <code>new</code> is not released automatically when we leave the function where that happened, it's up to us to keep track of that memory and manually release it to the system using the delete operator when we're finished with it. Failure to do so will lead to a memory leak  </li>
+<li>Remember that <code>new</code> returns to us the address of the block of memory it just set aside for us in heap space. We store that address in a pointer variable.</li>
+<li>The memory we set aside with <code>new</code> has behaviors that are not predicted at compile-time. If we use <code>new</code> to create an array, the length of that array might be based on some variable whose value is determined through user input or file input at runtime. Furthermore, the exact place where we finish using that memory and manually release it back to the system might be governed by user input that cannot be predicted at compile-time. The behaviors here are <em>dynamic</em>.  </li>
+<li>Accordingly, when we set aside memory with new, we call that <strong>dynamic memory allocation</strong>. (In contrast, the creation of local variables without the use of <code>new</code> is called <strong>static memory allocation</strong>, which is a bit obnoxious because the word "static" had additional meanings in C++ and many other languages.)</li>
+<li>you might be tremendously concerned that the immortal quokka we created in <code>createQuokka()</code> will take up memory in our system forever and ever. That's not really the case. When a program terminates -- <strong>when we finally return from <code>main()</code> -- all memory associated with that program is reclaimed by the operating system.</strong> So, while our quokka lived beyond the lifespan of the function where it was created, it didn't live beyond the lifespan of our whole program. (If that were possible, the consequences for memory management would be disastrous.) It's considered poor form, however, to let a program terminate without having manually released our claim to all the dynamically allocated memory we set aside over the course of our program. We should do our own bookkeeping and release dynamically allocated memory once we no longer need it. <strong>When we fail to do so -- or when we completely lose all record of a pointer given to us by new and can therefore no longer access that memory address -- we have what we call a memory leak.</strong></li>
+<li>A super important rule of thumb is that for every <code>new</code> statement in a program, we should have a corresponding <code>delete</code> statement to free up the dynamically allocated memory.</li>
+</ul>
+</li>
+<li>when we have a member function that isn't supposed to change the internal state of an object at all, it's conventional to put <code>const</code> after the function name in both our header file and our .cpp file. That actually ensures that the function cannot change any of our member variables, and this is considered a best practice so that no one can come along and accidentally modify the code to change member variables that shouldn't have been changed.</li>
+</ul>
+<p>## lecture 17
+  * binary trees (every node has at most two children)
+  * complete binary tree (every level is completely filled up, except perhaps for the bottom level, and if the bottom level is not filled up, all nodes on that level must be completely flushed to the left with no gaps)</p>
 
 
 
@@ -2184,7 +2285,7 @@ when pass by reference, the argument and the variable passed in is the same thin
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 21, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2024</span>
   </span>
 
     

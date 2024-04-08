@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bugsquestiions" class="md-skip">
+        <a href="#bugs-questiions" class="md-skip">
           Skip to content
         </a>
       
@@ -1949,6 +1949,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vscode-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      vscode 终端 path 环境变量的问题
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2050,6 +2059,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../liferecord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    life record
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2102,6 +2132,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vscode-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      vscode 终端 path 环境变量的问题
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2149,10 +2188,14 @@
   
 
 
-<h1 id="bugsquestiions">Bugs&amp;Questiions</h1>
+<h1 id="bugs-questiions">Bugs &amp;&amp; Questiions</h1>
 <h2 id="vscode">vscode</h2>
 <h3 id="vscodevim">vscodevim</h3>
 <p>In vscode settings.json add <code>"vim.mouseSelectionGoesIntoVisualMode": false,</code> to use mouse selection, however, it can't work. Just like <a href="https://github.com/VSCodeVim/Vim/issues/1871">vim issues 1871</a> and <a href="https://github.com/VSCodeVim/Vim/issues/2410">vim issues 2410</a>, it drives me crazy, because it is a big difference between there is a mouse selecting and there isn't a mouse selection. The problem exists for nearly 2 months and it lead to me giving up using vscodevim at the beginning. However, after battle with this problem for nearly a half day I find it <mark>conflict with another software Youdao dictionary</mark>. just forbid get word from the screen function. All right for vscodevim.  </p>
+<h3 id="vscode-path">vscode 终端 path 环境变量的问题</h3>
+<p>在我下载好 homebrew 和 pyenv 后发现系统自带的 terminal.app 输出的 <code>$PATH</code> 与 vscode 终端中的 path 不一致，导致 vim 不能使用 <code>opt/homebrew/bin/vim</code> 中的vim, 以至于版本不一致导致的错误。解决方式，重新设置 vscode 中终端的环境变量与系统保持一致，进入 settings.json 文件，添加<br />
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="nt">&quot;terminal.integrated.inheritEnv&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span></code></pre></div></p>
 <h2 id="python">Python</h2>
 <h3 id="after-changing-user-folder-pyenv-fault">After changing user folder pyenv fault</h3>
 <p>reinstall python with the pyenv  </p>
@@ -2183,7 +2226,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2024</span>
   </span>
 
     
