@@ -155,6 +155,7 @@ nav:
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
       - intimate relationships: "etc/reading.md"
+      - life record: "etc/liferecord.md"
       
 
 extra:

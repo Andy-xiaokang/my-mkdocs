@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# [CSDIY](https://csdiy.wiki/) 课程路线
+# 一份参考 [CSDIY](https://csdiy.wiki/) 的课程路线
 ## 编程入门
 - [x] MIT-missing semester
 - [x] [CS50X](https://github.com/Andy-xiaokang/CS50)

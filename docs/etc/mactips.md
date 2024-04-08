@@ -11,6 +11,8 @@ comments: true
     The Missing Package Manager for macOS (or Linux)
 * [cheatsheet](https://www.mediaatelier.com/CheatSheet/)  
     CheatSheet is a free utility app that lets you see keyboard shortcuts with a press of a button. (CheatSheet has been discontinued because it no longer works with macOS 14 Sonoma. [KeyCue](https://www.ergonis.com/keycue/switching/cheatsheet) is still available.)
+* [keyClu](xhttps://sergii.tatarenkov.name/keyclu/support/)  
+    Simple and handy overview of applications shortcuts. Easy to use, just press ⌘ twice and hold to see the list.
 * [maccy](https://github.com/p0deje/Maccy)  
     Maccy is a lightweight clipboard manager for macOS.
 * [customShortcuts](https://www.houdah.com/customShortcuts/download.html)  
@@ -108,6 +110,12 @@ upload image you can
 ## auto fill passphase for ssh  
 `ssh-add` then fill in the passphase  
 `ssh-agent` to auto fill passphase  
+in macOS add the following commands in `~/.zshrc`  
+```
+ssh-add --apple-use-keychain YOUR-KEY
+ssh-agent 
+```  
+you can search the documentation in the official website [using-ssh-agent-forwarding](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
 
 ## set off ipv6 Wi-Fi 
 `sudo networksetup -listallnetworkservices`  
