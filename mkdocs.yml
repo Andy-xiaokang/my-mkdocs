@@ -1,4 +1,4 @@
-site_name: CSDIY Route Docs
+site_name: Kang's Route Docs
 site_url: https://andy-xiaokang.github.io/my-mkdocs/
 site_author: Andy-xiaokang
 repo_name: my-mkdocs
@@ -155,7 +155,9 @@ nav:
       - terminology: "etc/terminology.md"
       - prose: "etc/prose.md"
       - intimate relationships: "etc/reading.md"
+      - psychology and life: "etc/psychologyAndLife.md"
       - life record: "etc/liferecord.md"
+      - lyrics: "etc/lyrics.md"
       
 
 extra:

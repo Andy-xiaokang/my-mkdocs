@@ -179,3 +179,13 @@ then the wifi ip will changed from ipv6 to ipv4
         filter: '美国' # golang regrex 匹配外部代理集 provider1 中那些节点名称中包含美国的节点
     ```
 * 还有其他很多小问题和功能可以探索，就不一一列举了
+
+## edit shortcuts
+* `option + delete` delete an entire word  
+* `opiton + arrow key` jumps over the whole word
+* `shift + arrow key` highlight the previous character
+* `option + shift + arrow key` highlight the whole words or sentences(selected)
+* `command + <- ->` beginning of the line, end of the line
+* `command + delete` delete the whole line
+* `control + command + space` open system character panel
+* `control + command + d` open system dictionary

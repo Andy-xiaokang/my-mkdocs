@@ -8,11 +8,17 @@ comments: true
 ![截屏2023-12-25 21.46.04](https://s2.loli.net/2023/12/25/Z8gQ1W9UxDGYoj5.png)
 variable name represents a location in memory | variable name is an alias of a M register  
 
+## lecture 7
+* **abstract data type (ADT)**: A specification of a collection of data and the operations that can be performed on it. 
+    - Describes *what* a collection does, not *how* it does it.
+* we don't know exactly how a stack or queue is implemented, and we don't need to. 
+    - we just need to understand the idea of the collection and what operations it can perform.
+   
 ## lecture 13
 ![20240115211522](https://s2.loli.net/2024/01/15/mwTfSWHRMFzP3VU.png)
 ![20240116001226](https://s2.loli.net/2024/01/16/5ewQtAxfoTcZghb.png)
 ![20240115212131](https://s2.loli.net/2024/01/15/Et8MJTNlhBaoxQu.png)
-
+ 
 * **In C++** when pass by value, the argument will copy the value passed in.  
 when pass by reference, the argument and the variable passed in is the same thing(the same M register in the memory).  
 * **in Java** there is only one type **pass by value**, when pass the primitive type we pass the value of the data type; when pass object, we pass the address(reference) of the object, in this case, we called "pass by reference", but actually, there is only pass by value, we divide the pass circumstance into two type.  
@@ -24,7 +30,7 @@ when pass by reference, the argument and the variable passed in is the same thin
 
 ***
 
-=== "non-pointer"
+=== "non-pointer" 
 
     ```C++
     void foo() {
@@ -82,8 +88,89 @@ An object is an instance of a class
     * Accordingly, when we set aside memory with new, we call that **dynamic memory allocation**. (In contrast, the creation of local variables without the use of `new` is called **static memory allocation**, which is a bit obnoxious because the word "static" had additional meanings in C++ and many other languages.)
     * you might be tremendously concerned that the immortal quokka we created in `createQuokka()` will take up memory in our system forever and ever. That's not really the case. When a program terminates -- **when we finally return from `main()` -- all memory associated with that program is reclaimed by the operating system.** So, while our quokka lived beyond the lifespan of the function where it was created, it didn't live beyond the lifespan of our whole program. (If that were possible, the consequences for memory management would be disastrous.) It's considered poor form, however, to let a program terminate without having manually released our claim to all the dynamically allocated memory we set aside over the course of our program. We should do our own bookkeeping and release dynamically allocated memory once we no longer need it. **When we fail to do so -- or when we completely lose all record of a pointer given to us by new and can therefore no longer access that memory address -- we have what we call a memory leak.**
     * A super important rule of thumb is that for every `new` statement in a program, we should have a corresponding `delete` statement to free up the dynamically allocated memory.
-  * when we have a member function that isn't supposed to change the internal state of an object at all, it's conventional to put `const` after the function name in both our header file and our .cpp file. That actually ensures that the function cannot change any of our member variables, and this is considered a best practice so that no one can come along and accidentally modify the code to change member variables that shouldn't have been changed.
+  * when we have a member function that isn't supposed to change the internal state of an object at all, it's conventional to put `const` after the function name in both our header file and our .cpp file. That actually ensures that the function cannot change any of our member variables, and this is considered a best practice so that no one can come along and accidentally modify the code to change member variables that shouldn't have been changed.  
 
-  ## lecture 17
+## lecture 17
   * binary trees (every node has at most two children)
   * complete binary tree (every level is completely filled up, except perhaps for the bottom level, and if the bottom level is not filled up, all nodes on that level must be completely flushed to the left with no gaps)
+
+## lecture 21 
+operator overloading 
+
+```C++
+ostream& operator <<(ostream& out, const Date& d) {
+    out << d.getMonth() << "/" << d.getDay();
+    return out;
+}
+```
+`std::cout` is an ostream object. and every `<<` operator will change it with another parameter.  
+
+## lecture 22
+> it's a shame to just use these blind and not understand what they're really doing and they're structures that we can understand using what we've learned     
+    
+
+```C++
+type* name = new type[length];    // uninitialized
+type* name = new type[length]();    // initialized to 0
+```   
+
+* if () are written after the array[], it will set all array elements to their default zero-equivalent value for the data type. (slower)
+* if no () are written, the elements are uninitialized, so whatever garbage values were stored in that memory beforehand will be your elements. 
+
+`delete[] name;`  
+
+* release the memory associated with the given array.
+* Must the done for all arrays created with new 
+    - Or else the program has a *memory leak*.
+    - Leaked memory will be released when the program exits, but for long-running programs, memory leaks are bad and will eventually exhaust your RAM.  
+
+## lecture 24
+* any declared values live until the end of the current function scope.
+    - this is called *static allocation* or *stack allocation*.
+    - if you return an object, it is copied; the original is still discarded
+
+## lecture 25
+* C++ has an entity called a *structure* (struct). smaller than class.
+    - Very similar to a class; a collection of data and (maybe) behavior.
+    - But has(by default) public member variable and no functions.
+
+## lecture 26
+pointers to objects  
+a variable (left side of =) is an arrow (*the base of an arrow*)  
+a value (right side of =) is an object (*a box; what an arrow points at*)  
+
+## Binary Tree && Binary Search Tree
+short circuit boolean evaluation  
+
+## Graph
+* this is DFS(depth first search) because when a goes and tries exploring b it explores all of the things that could come after b before it ever backtracks to try going down from a to d (another choice as to b), so it does a deep exploration of things that could follow b before it tries anything else.  
+* breadth-first search(BFS): finds a path between two nodes by taking one step down all paths and then immediately backtracking. 
+* BFS and DFS do not consider edge weights, dijkstra's algorithm consider edge weights.  
+* dijkstra's algorithm is a *greedy algorithm*:  
+    - Make choices that currently seem the best.
+    - Locally optimal does not always mean globally optimal.
+* It is correct because it maintains the following two properties:
+    - for every marked vertex, the current recorded cost is the lowest cost to that vertex from the source vertex.
+    - for every unmarked vertex v, its recorded distance is shortest path distance to *v* from source vertex, considering only currently known vertices and v. 
+
+## hash
+`hashNode** elements` `elements = new hashNode*[10]`, elements is a pointer to an array of hashNode pointer.  
+  
+## inheritance
+* **is-a relationship**: A hierarchical connection where one category can be treated as a specialized version of another.
+* **inheritance:** A way to form new classes based on existing classes, taking on their attributes/behavior.  
+    - a way to group related classes
+    - a way to share code between two or more classes
+* one class can extend another, absorbing its data/behavior.
+    - superclass(base class): Parent class that is being extended.
+    - subclass(derived class): Child class that inherits from the superclass.
+        1. subclass gets a copy of every field and method from superclass.
+        2. subclass can add its own behavior, and/or change inheried behavior.  
+* **virtual fuction:** One that is allowed to be overriden. must be declared with `virtual` keyword in superclass.
+
+## Polymorphism
+* **polymorphism:** Ability for the same code to be used with different types of objects and behave differently with each.  
+    - templates provide *compile-time* polymorphism. inheritance provides *run-time* polymorphism.
+
+## heapify time complexity
+![1714361634077](https://s2.loli.net/2024/04/29/eFVXdjNgPWn3U9J.jpg)
