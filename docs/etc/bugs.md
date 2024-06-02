@@ -21,3 +21,6 @@ reinstall python with the pyenv
 
 ## rectangle pro
 unknown for conflict with rectangle, when double click a window, the window will jump to next monitor.
+
+## question with github
+* the push record of green block was disappear when push to the remote repository
