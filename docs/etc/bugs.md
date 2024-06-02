@@ -19,3 +19,5 @@ reinstall python with the pyenv
 * then reinstall `pyenv install 3.11.3` 
 * use `which python` and `where python` to test if pyenv work.  
 
+## rectangle pro
+unknown for conflict with rectangle, when double click a window, the window will jump to next monitor.
