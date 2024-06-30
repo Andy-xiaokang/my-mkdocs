@@ -189,3 +189,4 @@ then the wifi ip will changed from ipv6 to ipv4
 * `command + delete` delete the whole line
 * `control + command + space` open system character panel
 * `control + command + d` open system dictionary
+* `command + option + escape` force quit application  

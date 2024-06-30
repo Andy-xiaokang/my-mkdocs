@@ -119,6 +119,8 @@ nav:
       - S6 Memory Management,Pointers,and Linked Lists: "CS106B/s6.md"
       - S7 Trees: "CS106B/s7.md"
       - S8 Tree Encoding: "CS106B/s8.md"
+  - CS106L:
+      - introduction: "CS106L/introduction.md"
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"

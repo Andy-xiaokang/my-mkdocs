@@ -23,4 +23,6 @@ reinstall python with the pyenv
 unknown for conflict with rectangle, when double click a window, the window will jump to next monitor.
 
 ## question with github
-* the push record of green block was disappear when push to the remote repository
+* the push record of green block was disappear when push to the remote repository  
+
+when the local git `user.email` (the email address used for the commits ) is not associated with your account. the green block won't appear on the graph .  

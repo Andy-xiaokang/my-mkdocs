@@ -13,7 +13,7 @@ comments: true
 - [x] magic keyboard and touchpad 整合底座 
 - [ ] 阿卡西斯雷电四移动硬盘盒做扩容设备 
 - [x] itgz雷电四硬盘盒 
-- [ ] 显示器  kuyoukon 5K 27inchs 镜面 5120*2880 218ppi（ppi 色深及尺寸同 studio display ps: studio dispaly 默认分辨率显示是 2560 * 1440）
+- [x] 显示器  kuyoukon 5K 27inchs 镜面 5120*2880 218ppi（ppi 色深及尺寸同 studio display ps: studio dispaly 默认分辨率显示是 2560 * 1440）
 - [x] 显示器 ViewSonic 4K 27inchs 雾面 3840*2160 163ppi 
 - [ ] webCam logitech C920Pro 
 - [x] 一台升降桌 (lego E6白色 1.8m * 0.8) 
@@ -27,7 +27,7 @@ comments: true
 - [ ] 一台打印机 
 
 ## 生活
-- [x] 米家吸尘器2
+- [x] 米家吸尘器2  
 - [x] 米家照片打印机1s
 - [x] 科麦斯日常家用工具箱套装
 - [x] 一块地毯(米驼色 2m * 1.4m) 

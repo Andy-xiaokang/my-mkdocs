@@ -175,13 +175,16 @@ short circuit boolean evaluation
 ## heapify time complexity
 ![1714361634077](https://s2.loli.net/2024/04/29/eFVXdjNgPWn3U9J.jpg)
 
-## Class 
-* the **public keyword** indicates that the member functions listed underneath is publicly accessible by anyone using the class. This essentially means that they from the public in-terface for the class. 
-* the *private keyword** indicates that the data members listed underneath it are private and only accessible by the class itself. This Means that those data members ate part of the private implementation of the class and aren't something that clients should be touching.
+## Class
+
+* the **public keyword** indicates that the member functions listed underneath is publicly accessible by anyone using the class. This essentially means that they from the public in-terface for the class.
+* the **private keyword** indicates that the data members listed underneath it are private and only accessible by the class itself. This Means that those data members ate part of the private implementation of the class and aren't something that clients should be touching.
 * the `::` notion is the **scope resolution operator**. It's used to indicate what logical part of the program a given name belongs to. The case we'll primarily see it used is in the context of defining member functions in a .cpp file, where we need to incicate that the functions we're implementing are actually member functions of a class, not freestanding functions.  
 * the `const` keyword appears in member functions indicates that those member functions aren't allowed to change the data members of the class. Only `const` member functions can be called on an object when in a function that accepts an object of that class by const reference. (when pass by const reference you can pass by reference but can't change the original value)  
 * the statement `delete[] elements`; means "**destroy the momory pointed at by elems**" rather than "destroy the elems variable". As a result, elems is still a perfectly safe variable to reassign.  
+* the address of the object is the same as the first member variable 
 
 ## debug
 * use `step into` to enter the call to the funciton  
 * use `step out` to return to the funciton
+* use `@OX` represents an object or something
