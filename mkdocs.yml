@@ -121,6 +121,7 @@ nav:
       - S8 Tree Encoding: "CS106B/s8.md"
   - CS106L:
       - introduction: "CS106L/introduction.md"
+      - streams: "CS106L/streams.md"
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"
