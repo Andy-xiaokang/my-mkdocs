@@ -10,13 +10,13 @@
         <meta name="author" content="Andy-xiaokang">
       
       
-        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/Computer_English/Unit10/">
+        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106L/streams/">
       
       
-        <link rel="prev" href="../Unit9/">
+        <link rel="prev" href="../introduction/">
       
       
-        <link rel="next" href="../Unit11/">
+        <link rel="next" href="../../CS50/week1/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Unit10 - Kang's Route Docs</title>
+        <title>streams - Kang's Route Docs</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unit-10-computer-security" class="md-skip">
+        <a href="#streams" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unit10
+              streams
             
           </span>
         </div>
@@ -1100,19 +1100,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1126,7 +1128,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             CS106L
@@ -1140,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1158,10 +1160,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../CS106L/streams/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    streams
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1170,6 +1192,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stringstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      stringstream
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-bits" class="md-nav__link">
+    <span class="md-ellipsis">
+      state bits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputoutput-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      input/output streams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulators" class="md-nav__link">
+    <span class="md-ellipsis">
+      manipulators
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1570,21 +1657,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -1598,7 +1683,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Computer-English
@@ -1612,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit1/" class="md-nav__link">
+      <a href="../../Computer_English/Unit1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1633,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit2/" class="md-nav__link">
+      <a href="../../Computer_English/Unit2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1654,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit3/" class="md-nav__link">
+      <a href="../../Computer_English/Unit3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1675,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit4/" class="md-nav__link">
+      <a href="../../Computer_English/Unit4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1696,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit5/" class="md-nav__link">
+      <a href="../../Computer_English/Unit5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1717,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit6/" class="md-nav__link">
+      <a href="../../Computer_English/Unit6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1738,7 +1823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit7/" class="md-nav__link">
+      <a href="../../Computer_English/Unit7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1759,7 +1844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit8/" class="md-nav__link">
+      <a href="../../Computer_English/Unit8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1780,7 +1865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit9/" class="md-nav__link">
+      <a href="../../Computer_English/Unit9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1798,30 +1883,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Unit10
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Computer_English/Unit10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1830,53 +1895,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#section-a-computer-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section A Computer Security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-b-antivirus-software" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section B Antivirus Software
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-c-types-of-malicious-software" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section C Types of Malicious Software
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1889,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit11/" class="md-nav__link">
+      <a href="../../Computer_English/Unit11/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1910,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit12/" class="md-nav__link">
+      <a href="../../Computer_English/Unit12/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2233,27 +2251,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#section-a-computer-security" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Section A Computer Security
+      overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-b-antivirus-software" class="md-nav__link">
+  <a href="#stringstream" class="md-nav__link">
     <span class="md-ellipsis">
-      Section B Antivirus Software
+      stringstream
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-c-types-of-malicious-software" class="md-nav__link">
+  <a href="#state-bits" class="md-nav__link">
     <span class="md-ellipsis">
-      Section C Types of Malicious Software
+      state bits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputoutput-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      input/output streams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulators" class="md-nav__link">
+    <span class="md-ellipsis">
+      manipulators
     </span>
   </a>
   
@@ -2277,232 +2313,65 @@
   
 
 
-<h1 id="unit-10-computer-security">Unit 10 Computer Security</h1>
-<h2 id="section-a-computer-security">Section A Computer Security</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">confidentiality</td>
-<td style="text-align: center;">机密性</td>
-</tr>
-<tr>
-<td style="text-align: center;">confidential</td>
-<td style="text-align: center;">秘密的，机密的</td>
-</tr>
-<tr>
-<td style="text-align: center;">disclose</td>
-<td style="text-align: center;">泄露，透漏</td>
-</tr>
-<tr>
-<td style="text-align: center;">unimpaired</td>
-<td style="text-align: center;">未受损的，未削弱的</td>
-</tr>
-<tr>
-<td style="text-align: center;">authenticity</td>
-<td style="text-align: center;">可靠性，真实性</td>
-</tr>
-<tr>
-<td style="text-align: center;">originator</td>
-<td style="text-align: center;">创始人，起源</td>
-</tr>
-<tr>
-<td style="text-align: center;">nonrepudiation</td>
-<td style="text-align: center;">不拒绝，不否认</td>
-</tr>
-<tr>
-<td style="text-align: center;">breach</td>
-<td style="text-align: center;">破坏，违反</td>
-</tr>
-<tr>
-<td style="text-align: center;">susceptible</td>
-<td style="text-align: center;">易受影响的</td>
-</tr>
-<tr>
-<td style="text-align: center;">proliferation</td>
-<td style="text-align: center;">激增，扩散</td>
-</tr>
-<tr>
-<td style="text-align: center;">piracy</td>
-<td style="text-align: center;">侵犯版权，盗版</td>
-</tr>
-<tr>
-<td style="text-align: center;">countermeasure</td>
-<td style="text-align: center;">对策，对抗手段</td>
-</tr>
-<tr>
-<td style="text-align: center;">secrecy</td>
-<td style="text-align: center;">秘密，保密</td>
-</tr>
-<tr>
-<td style="text-align: center;">aggregate</td>
-<td style="text-align: center;">聚集的，合计的</td>
-</tr>
-<tr>
-<td style="text-align: center;">disclosure</td>
-<td style="text-align: center;">泄露，透漏</td>
-</tr>
-<tr>
-<td style="text-align: center;">respondent</td>
-<td style="text-align: center;">调查对象</td>
-</tr>
-<tr>
-<td style="text-align: center;">impersonate</td>
-<td style="text-align: center;">扮演，模仿</td>
-</tr>
-<tr>
-<td style="text-align: center;">legitimate</td>
-<td style="text-align: center;">合法的</td>
-</tr>
-<tr>
-<td style="text-align: center;">inhibit</td>
-<td style="text-align: center;">抑制，约束</td>
-</tr>
-<tr>
-<td style="text-align: center;">vulnerability</td>
-<td style="text-align: center;">易受攻击的地方，脆弱</td>
-</tr>
-<tr>
-<td style="text-align: center;">monetary</td>
-<td style="text-align: center;">货币的，金融的</td>
-</tr>
-<tr>
-<td style="text-align: center;">thrust</td>
-<td style="text-align: center;">要点，要旨，目标</td>
-</tr>
-</tbody>
-</table>
-<h2 id="section-b-antivirus-software">Section B Antivirus Software</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">trojan</td>
-<td style="text-align: center;">特洛伊木马（病毒）</td>
-</tr>
-<tr>
-<td style="text-align: center;">malware</td>
-<td style="text-align: center;">恶意软件</td>
-</tr>
-<tr>
-<td style="text-align: center;">infallible</td>
-<td style="text-align: center;">不可能出错的，绝对可靠的</td>
-</tr>
-<tr>
-<td style="text-align: center;">cloak</td>
-<td style="text-align: center;">掩盖，掩饰</td>
-</tr>
-<tr>
-<td style="text-align: center;">viral</td>
-<td style="text-align: center;">病毒的，病毒引起的</td>
-</tr>
-<tr>
-<td style="text-align: center;">heuristic</td>
-<td style="text-align: center;">启发的，探索的</td>
-</tr>
-<tr>
-<td style="text-align: center;">quarantine</td>
-<td style="text-align: center;">隔离</td>
-</tr>
-<tr>
-<td style="text-align: center;">surveillance</td>
-<td style="text-align: center;">监视</td>
-</tr>
-<tr>
-<td style="text-align: center;">heuristic</td>
-<td style="text-align: center;">启发法，探索法</td>
-</tr>
-<tr>
-<td style="text-align: center;">perplexing</td>
-<td style="text-align: center;">使人困惑的，令人费解的</td>
-</tr>
-<tr>
-<td style="text-align: center;">infiltrate</td>
-<td style="text-align: center;">渗入</td>
-</tr>
-<tr>
-<td style="text-align: center;">supposedly</td>
-<td style="text-align: center;">据推测，据称</td>
-</tr>
-<tr>
-<td style="text-align: center;">eradicate</td>
-<td style="text-align: center;">根除，消灭</td>
-</tr>
-</tbody>
-</table>
-<h2 id="section-c-types-of-malicious-software">Section C Types of Malicious Software</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">parasitic</td>
-<td style="text-align: center;">寄生的</td>
-</tr>
-<tr>
-<td style="text-align: center;">groundbreaking</td>
-<td style="text-align: center;">开拓性的</td>
-</tr>
-<tr>
-<td style="text-align: center;">vector</td>
-<td style="text-align: center;">矢量</td>
-</tr>
-<tr>
-<td style="text-align: center;">payload</td>
-<td style="text-align: center;">有效荷载</td>
-</tr>
-<tr>
-<td style="text-align: center;">dormant</td>
-<td style="text-align: center;">休眠的，暂停活动的</td>
-</tr>
-<tr>
-<td style="text-align: center;">propagate</td>
-<td style="text-align: center;">传播，繁殖</td>
-</tr>
-<tr>
-<td style="text-align: center;">trapdoor</td>
-<td style="text-align: center;">陷阱门，天窗</td>
-</tr>
-<tr>
-<td style="text-align: center;">unscrupulous</td>
-<td style="text-align: center;">肆无忌惮的，无耻的</td>
-</tr>
-<tr>
-<td style="text-align: center;">invoke</td>
-<td style="text-align: center;">调用</td>
-</tr>
-<tr>
-<td style="text-align: center;">semantics</td>
-<td style="text-align: center;">语义（学）</td>
-</tr>
-<tr>
-<td style="text-align: center;">stealthy</td>
-<td style="text-align: center;">偷偷摸摸的，暗中进行的，秘密的</td>
-</tr>
-<tr>
-<td style="text-align: center;">eradication</td>
-<td style="text-align: center;">根除，消灭</td>
-</tr>
-<tr>
-<td style="text-align: center;">severity</td>
-<td style="text-align: center;">剧烈，严重</td>
-</tr>
-</tbody>
-</table>
+<h1 id="streams">Streams</h1>
+<h2 id="overview">overview</h2>
+<p>We often want our programs to interact with external devices. eg: console&amp;keyboard, files, other programs(pipeline), sockets(networking)<br />
+In general, there are two main challenges.<br />
+<img alt="20240630231820" src="https://s2.loli.net/2024/06/30/UMCVN1LIOdYp27c.png" />
+<img alt="20240630231930" src="https://s2.loli.net/2024/06/30/Gcdmlu2vqpyoXC5.png" />
+<img alt="20240630230912" src="https://s2.loli.net/2024/06/30/bPjDa5gheFRIcz4.png" />
+<img alt="20240630232233" src="https://s2.loli.net/2024/06/30/pYWdksVafiD9rbe.png" /></p>
+<h2 id="stringstream">stringstream</h2>
+<p><img alt="20240630232451" src="https://s2.loli.net/2024/06/30/GdkCUvBO4gRA1pr.png" />
+Types matters, Stream stops reading at any whitespace or any invalid character for the type.  </p>
+<p>key takeaways  </p>
+<ul>
+<li><code>&gt;&gt;</code> extracts the next variable of a certain type, up to the next whitespace.</li>
+<li>the <code>&gt;&gt;</code> and <code>&lt;&lt;</code> operators return a reference to the stream itself, so in each instance the stream is the left-hand operand.  </li>
+<li>it's called a stringstream. Reading and writing simultaneously can often lead to subtle bugs, be careful.  </li>
+</ul>
+<h2 id="state-bits">state bits</h2>
+<ul>
+<li><code>G</code> <strong>Good bit</strong>: ready for read/write.  </li>
+<li><code>F</code> <strong>Fail bit</strong>: previous operation failed, all future operations frozen.  </li>
+<li><code>E</code> <strong>EOF bit</strong>: previous operation reached the end of buffer content.  </li>
+<li><code>B</code> <strong>Bad bit</strong>: external error, likely irrecoverable.  </li>
+</ul>
+<p>common reasons why that bit is on.  </p>
+<ul>
+<li><code>G</code> Nothing unusual, on when other bits are off.  </li>
+<li><code>F</code> Type mismatch, file can't be opened, seekg failed.</li>
+<li><code>E</code> Reached the end of the buffer.  </li>
+<li><code>B</code> could not move character to buffer from external source.  </li>
+</ul>
+<p>G and B are not opposite, G and F are not opposite, F and E are normally the ones you will be checking.<br />
+conclusion: you should rarely be using G</p>
+<h2 id="inputoutput-streams">input/output streams</h2>
+<p>there are four standard iostreams.  </p>
+<ul>
+<li><code>cin</code> standard input stream  </li>
+<li><code>cout</code> standard output stream (buffered)  </li>
+<li><code>cerr</code> standard error stream (unbuffered)</li>
+<li><code>clog</code> standard error stream (buffered)  </li>
+</ul>
+<p>key takeaways:<br />
+<img alt="20240701164633" src="https://s2.loli.net/2024/07/01/qp6CcuRgMJnXhor.png" />
+the position pointer skip whitespace before the token.  </p>
+<p>streams are not copyable<br />
+<code>cout &lt;&lt; endl</code> = <code>cout &lt;&lt; '\n' &lt;&lt; std::flush</code><br />
+<code>cin</code> read up to the white space but it doesn't consume the white space. it's only when you call <code>cin</code> another time, then it skips the white space and it tries to read the token.<br />
+when fail bit is on, all future <code>cin</code> operation fail.</p>
+<h2 id="manipulators">manipulators</h2>
+<hr />
+<p>when to use auto?</p>
+<ul>
+<li>when you don't care what the type is (iterators)</li>
+<li>when its type is clear from context (templates)</li>
+<li>when you don't know that the type is (lambdas)</li>
+<li>don't use it unnecessarily for return types.</li>
+</ul>
+<p>auto can not be use as type of fuction's parameter, but can be used as function's return type.<br />
+for lambda function it must be auto, because when the compiler generates the class you have no idea what the class is called the compiler is gonna generate some name for that class.  </p>
 
 
 
