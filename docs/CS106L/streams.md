@@ -61,6 +61,17 @@ when fail bit is on, all future `cin` operation fail.
 
 ## manipulators
 
+## summary of Types and Streams
+
+* Use modern C++ constructs! (auto, uniform initialization, etc)
+* If you need error checking for user input, best practice is to:
+  * use getline to retrieve a line from `cin`
+  * create a istringstream with the line
+  * parse the line using a stringstream, usually with `>>`
+* Use state bits to control streams and perform error-checking.
+  * fail bit can check type mismatchs
+  * eof bit can check if you consumed all input
+
 ***
 
 when to use auto?
@@ -72,3 +83,6 @@ when to use auto?
 
 auto can not be use as type of fuction's parameter, but can be used as function's return type.  
 for lambda function it must be auto, because when the compiler generates the class you have no idea what the class is called the compiler is gonna generate some name for that class.  
+
+![20240702164907](https://s2.loli.net/2024/07/02/SgCxNJRHWQbqyGz.png)  
+![20240702164936](https://s2.loli.net/2024/07/02/nY3AGLlpT4De8w1.png)  
