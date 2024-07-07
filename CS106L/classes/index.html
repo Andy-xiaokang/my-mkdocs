@@ -10,13 +10,9 @@
         <meta name="author" content="Andy-xiaokang">
       
       
-        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106B/s3/">
+        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106L/classes/">
       
       
-        <link rel="prev" href="../s2/">
-      
-      
-        <link rel="next" href="../s4/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>S3 Recursion and Big O - Kang's Route Docs</title>
+        <title>class Design - Kang's Route Docs</title>
       
     
     
@@ -75,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#class-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S3 Recursion and Big O
+              class Design
             
           </span>
         </div>
@@ -862,21 +863,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -890,7 +889,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             CS106B
@@ -904,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../CS106B/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s1/" class="md-nav__link">
+      <a href="../../CS106B/s1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s2/" class="md-nav__link">
+      <a href="../../CS106B/s2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,17 +963,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../CS106B/s3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +975,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -996,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s4/" class="md-nav__link">
+      <a href="../../CS106B/s4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1017,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s5/" class="md-nav__link">
+      <a href="../../CS106B/s5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s6/" class="md-nav__link">
+      <a href="../../CS106B/s6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s7/" class="md-nav__link">
+      <a href="../../CS106B/s7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s8/" class="md-nav__link">
+      <a href="../../CS106B/s8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/streams/" class="md-nav__link">
+      <a href="../streams/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2159,6 +2150,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#header-filesh-vs-source-filescpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Header files(.h) vs source files(.cpp)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-overloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator overloading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-correctness" class="md-nav__link">
+    <span class="md-ellipsis">
+      const correctness
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2176,9 +2222,47 @@
   
 
 
-  <h1>S3 Recursion and Big O</h1>
-
-
+<h1 id="class-design">class Design</h1>
+<p><img alt="20240707175754" src="https://s2.loli.net/2024/07/07/WkRcmnsiNOfBXjJ.png" /><br />
+<img alt="20240707175819" src="https://s2.loli.net/2024/07/07/taj9wIJRSGWd2OC.png" /><br />
+template classes require putting the implementation in the .h file</p>
+<h2 id="header-filesh-vs-source-filescpp">Header files(.h) vs source files(.cpp)</h2>
+<p>must put a semicolon at end of class declaration<br />
+in ClassName.cpp, we write bodies(definitons) for the member functions that were declared in the .h file:<br />
+member functions/constructors can refer to the object's member variables.  </p>
+<h2 id="constructors">Constructors</h2>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ClassName</span><span class="o">::</span><span class="n">ClassName</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">statements</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">initialize</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">object</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>constructor: Initializes state of new objects as they are created.<br />
+<strong>no return type is specified, implicitly "returns" the new object</strong>  </p>
+<h2 id="destructors">Destructors</h2>
+<p>destructor: called when the object is deleted by the program.<br />
+(when the object falls out of {} scope)<br />
+useful if your object needs to free any memory as it dies.  </p>
+<ul>
+<li>delete any pointers stored as private members</li>
+<li>delete[] any arrays stored as private members  </li>
+</ul>
+<h2 id="operator-overloading">Operator overloading</h2>
+<p>unary: + - ++ -- * &amp; ! ~ new delete<br />
+binary: + - * / % += -= *= /= %= &amp; | &amp;&amp; || ^ == != &lt; &gt; &lt;= &gt;= &lt;&lt; &gt;&gt; = [] -&gt; () ,
+syntax:<br />
+<code>returnType operator op(parameters)</code>;//in the .h file for the class<br />
+<code>returnType operator op(parameters)</code>// in the .cpp file for the class  </p>
+<h2 id="const-correctness">const correctness</h2>
+<p><img alt="20240707012356" src="https://s2.loli.net/2024/07/07/hBPzUCIZcHqL8s2.png" />
+<img alt="20240707013419" src="https://s2.loli.net/2024/07/07/1RL6HqxaUdpMzyI.png" />
+<img alt="20240707013537" src="https://s2.loli.net/2024/07/07/ZyloOwHg8rGcmsR.png" />
+<img alt="20240707013755" src="https://s2.loli.net/2024/07/07/TbotS36QrsFzqGu.png" />
+<img alt="20240707013917" src="https://s2.loli.net/2024/07/07/ZDKdLro9Pc3mJ6p.png" />
+<img alt="20240707014137" src="https://s2.loli.net/2024/07/07/6oOIRMcCKAx32zB.png" />
+<img alt="20240707014403" src="https://s2.loli.net/2024/07/07/MxEWbOPHFZ8YRqo.png" />
+const on objects:<br />
+Guarantees that the object won't change by allowing you to call only const functions and treating all public members as if they were const. This helps the programmer write safe code, and also gives the compiler more information to use to optimize.  </p>
+<p>const on fuctions:
+Guarantees that the function won't call anything but const funcitons, and won't modify any non-static, non-mutable members.  </p>
 
 
 
@@ -2222,6 +2306,58 @@
 
 
 
+
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="Andy-xiaokang/my-mkdocs"
+  data-repo-id="R_kgDOJi2XQA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOJi2XQM4CbWjT"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

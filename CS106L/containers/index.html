@@ -10,13 +10,9 @@
         <meta name="author" content="Andy-xiaokang">
       
       
-        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106B/s3/">
+        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106L/containers/">
       
       
-        <link rel="prev" href="../s2/">
-      
-      
-        <link rel="next" href="../s4/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>S3 Recursion and Big O - Kang's Route Docs</title>
+        <title>Containers - Kang's Route Docs</title>
       
     
     
@@ -75,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#containers" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S3 Recursion and Big O
+              Containers
             
           </span>
         </div>
@@ -862,21 +863,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -890,7 +889,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             CS106B
@@ -904,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../CS106B/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s1/" class="md-nav__link">
+      <a href="../../CS106B/s1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s2/" class="md-nav__link">
+      <a href="../../CS106B/s2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,17 +963,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../CS106B/s3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +975,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -996,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s4/" class="md-nav__link">
+      <a href="../../CS106B/s4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1017,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s5/" class="md-nav__link">
+      <a href="../../CS106B/s5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s6/" class="md-nav__link">
+      <a href="../../CS106B/s6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s7/" class="md-nav__link">
+      <a href="../../CS106B/s7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s8/" class="md-nav__link">
+      <a href="../../CS106B/s8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/streams/" class="md-nav__link">
+      <a href="../streams/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2159,6 +2150,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      sequence containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associative-containers-iterators" class="md-nav__link">
+    <span class="md-ellipsis">
+      associative containers &amp; iterators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-adaptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      container adaptors
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2176,9 +2204,57 @@
   
 
 
-  <h1>S3 Recursion and Big O</h1>
-
-
+<h1 id="containers">Containers</h1>
+<h2 id="sequence-containers">sequence containers</h2>
+<p>provides access to <strong>sequences</strong> of elements. includes:  </p>
+<ul>
+<li><code>std::vector&lt;T&gt;</code> elements stored in continueous memory</li>
+<li><code>std::deque&lt;T&gt;</code> elements don't stored in continueous memory</li>
+<li><code>std::list&lt;T&gt;</code></li>
+<li><code>std::array&lt;T&gt;</code></li>
+<li><code>std::forward_list&lt;T&gt;</code></li>
+</ul>
+<p>deques support fast <code>push_front</code> operations. However, for other common operations like <strong>element access</strong>, vector will always outperform a deque.<br />
+deque slower to access middle elements, however.  </p>
+<blockquote>
+<p>vector is the type of sequence that should be used by default... deque is the data structure of choice when most insertions and deletions take place at the beginning or at the end of the sequences.</p>
+</blockquote>
+<p>Uniform initialization.</p>
+<p>container adaptors</p>
+<h2 id="associative-containers-iterators">associative containers &amp; iterators</h2>
+<p>have no idea of a sequence<br />
+data is accessed using the <strong>key</strong> instead of <strong>indexes</strong>.<br />
+includes:  </p>
+<ul>
+<li><code>std::map&lt;T1, T2&gt;</code>  </li>
+<li><code>std::set&lt;T&gt;</code>  </li>
+<li><code>std::unordered_map&lt;T1, T2&gt;</code></li>
+<li><code>std::unordered_set&lt;T&gt;</code></li>
+</ul>
+<p>Iterators let us view a <strong><em>non-linear</em></strong> colleciton in a <strong><em>linear</em></strong> manner<br />
+<code>auto elems.end()</code> does not point anything in the elems, it point to the last element + 1, so it out of the container  </p>
+<p><img alt="20240704003557" src="https://s2.loli.net/2024/07/04/TsawPgikUeuRbC7.png" />
+<img alt="20240704010957" src="https://s2.loli.net/2024/07/04/Ec1HtpKFM7Be3j6.png" />
+<img alt="20240704011256" src="https://s2.loli.net/2024/07/04/odrjRCY2kBUlaHJ.png" />
+<img alt="20240704011342" src="https://s2.loli.net/2024/07/04/s3hnxMFbkS6AqjT.png" />
+<img alt="20240704011512" src="https://s2.loli.net/2024/07/04/35ATqfcZeiGI9OF.png" />
+<img alt="20240704011710" src="https://s2.loli.net/2024/07/04/yVx8CaFlzS3g5AB.png" />
+<img alt="20240704011808" src="https://s2.loli.net/2024/07/04/3zR2hqNPQuKdWjt.png" /></p>
+<h2 id="container-adaptors">container adaptors</h2>
+<ul>
+<li>
+<p>std::queue  </p>
+<blockquote>
+<p>the class template acts as a wrapper to the underlying container - only a specific set of functions is provided. The queue pushes the elements on the back of the underlying container and pops them from the front.  </p>
+</blockquote>
+</li>
+<li>
+<p>std::stack  </p>
+<blockquote>
+<p>the class template acts as a wrapper to the underlying container - only a specific set of functions is provided. The stack pushes and pops the element from the back of the underlying container, known as the top of the stack.  </p>
+</blockquote>
+</li>
+</ul>
 
 
 
@@ -2222,6 +2298,58 @@
 
 
 
+
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="Andy-xiaokang/my-mkdocs"
+  data-repo-id="R_kgDOJi2XQA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOJi2XQM4CbWjT"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
