@@ -122,6 +122,11 @@ nav:
   - CS106L:
       - introduction: "CS106L/introduction.md"
       - streams: "CS106L/streams.md"
+      - containers: "CS106L/containers.md"
+      - templates: "CS106L/templates.md"
+      - functions and algorithms: "CS106L/functions.md"
+      - classes: "CS106L/classes.md"
+
   - CS50X:
       - week1: "CS50/week1.md"
       - week2: "CS50/week2.md"

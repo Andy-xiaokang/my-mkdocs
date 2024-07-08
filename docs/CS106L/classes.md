@@ -57,3 +57,5 @@ Guarantees that the object won't change by allowing you to call only const funct
 const on fuctions:
 Guarantees that the function won't call anything but const funcitons, and won't modify any non-static, non-mutable members.  
 
+![20240707231951](https://s2.loli.net/2024/07/07/DNE4eMHZoV2CAzX.png)
+![20240707232010](https://s2.loli.net/2024/07/07/CkWUZnLblHDVduv.png)

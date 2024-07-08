@@ -8,8 +8,8 @@ comments: true
 - [x] [CS50X](https://github.com/Andy-xiaokang/CS50)
 - [x] [CS50P](https://github.com/Andy-xiaokang/CS50)
 - [x] [Stanford CS106B Programming Abstractions In C++](https://github.com/Andy-xiaokang/CS106B)
-- [ ] Stanford CS106L Standard C++ programming
-- [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
+- [ ] [Stanford CS106L Standard C++ programming](https://github.com/Andy-xiaokang/CS106L)
+- [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)![20240704234843](https://s2.loli.net/2024/07/04/1ifRM8EwUJDX6Fr.png)
 ## 数据结构和算法
 - [ ] UCB CS61B 当Java入门看了
 - [ ] [Coursera Algorithm I & II](https://github.com/Andy-xiaokang/Princeton-Algorithms)
