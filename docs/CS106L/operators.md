@@ -20,6 +20,10 @@ for a const variable you have to do them(declare, initialize) simutaneously
 ![20240708165205](https://s2.loli.net/2024/07/08/RrKdEs8m3jqGTQC.png)
 ![20240708165619](https://s2.loli.net/2024/07/08/1OPQ4gouhJp5inX.png)
 
+![20240708180210](https://s2.loli.net/2024/07/08/OuJ4VQATZYbslLi.png)
+![20240708180237](https://s2.loli.net/2024/07/08/f3Uev2AdHknEPGS.png)
+![20240708180255](https://s2.loli.net/2024/07/08/qzdLkMJ3EFAbQe8.png)
+
 ## POLA
 
 
