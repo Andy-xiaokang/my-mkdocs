@@ -126,6 +126,7 @@ nav:
       - templates: "CS106L/templates.md"
       - functions and algorithms: "CS106L/functions.md"
       - classes: "CS106L/classes.md"
+      - operators: "CS106L/operators.md"
 
   - CS50X:
       - week1: "CS50/week1.md"
