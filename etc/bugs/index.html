@@ -2280,6 +2280,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qt-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qt Creator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qt Creator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getlinecin-s-dont-wait-users-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      getline(cin, s) don't wait user's input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2544,6 +2568,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qt-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qt Creator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qt Creator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getlinecin-s-dont-wait-users-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      getline(cin, s) don't wait user's input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2567,15 +2615,15 @@
 <h3 id="vscodevim">vscodevim</h3>
 <p>In vscode settings.json add <code>"vim.mouseSelectionGoesIntoVisualMode": false,</code> to use mouse selection, however, it can't work. Just like <a href="https://github.com/VSCodeVim/Vim/issues/1871">vim issues 1871</a> and <a href="https://github.com/VSCodeVim/Vim/issues/2410">vim issues 2410</a>, it drives me crazy, because it is a big difference between there is a mouse selecting and there isn't a mouse selection. The problem exists for nearly 2 months and it lead to me giving up using vscodevim at the beginning. However, after battle with this problem for nearly a half day I find it <mark>conflict with another software Youdao dictionary</mark>. just forbid get word from the screen function. All right for vscodevim.  </p>
 <h3 id="vscode-path">vscode 终端 path 环境变量的问题</h3>
-<p>在我下载好 homebrew 和 pyenv 后发现系统自带的 terminal.app 输出的 <code>$PATH</code> 与 vscode 终端中的 path 不一致，导致 vim 不能使用 <code>opt/homebrew/bin/vim</code> 中的vim, 以至于版本不一致导致的错误。解决方式，重新设置 vscode 中终端的环境变量与系统保持一致，进入 settings.json 文件，添加<br />
+<p>在我下载好 homebrew 和 pyenv 后发现系统自带的 terminal.app 输出的 <code>$PATH</code> 与 vscode 终端中的 path 不一致，导致 vim 不能使用 <code>opt/homebrew/bin/vim</code> 中的vim, 以至于版本不一致导致的错误。解决方式，重新设置 vscode 中终端的环境变量与系统保持一致，进入 settings.json 文件，添加  </p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="nt">&quot;terminal.integrated.inheritEnv&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h2 id="python">Python</h2>
 <h3 id="after-changing-user-folder-pyenv-fault">After changing user folder pyenv fault</h3>
 <p>reinstall python with the pyenv  </p>
 <ul>
 <li><code>pyenv uninstall 3.11.3</code> you will find the <code>~/.pyenv/versions</code> remove 3.11.3</li>
-<li>then reinstall <code>pyenv install 3.11.3</code> </li>
+<li>then reinstall <code>pyenv install 3.11.3</code></li>
 <li>use <code>which python</code> and <code>where python</code> to test if pyenv work.  </li>
 </ul>
 <h2 id="rectangle-pro">rectangle pro</h2>
@@ -2584,7 +2632,10 @@
 <ul>
 <li>the push record of green block was disappear when push to the remote repository  </li>
 </ul>
-<p>when the local git <code>user.email</code> (the email address used for the commits ) is not associated with your account. the green block won't appear on the graph .  </p>
+<p>when the local git <code>user.email</code> (the email address used for the commits ) is not associated with your account. the green block won't appear on the graph .</p>
+<h2 id="qt-creator">Qt Creator</h2>
+<h3 id="getlinecin-s-dont-wait-users-input">getline(cin, s) don't wait user's input</h3>
+<p><img alt="20240719173957" src="https://s2.loli.net/2024/07/19/NxOnu7TJGKPrLyD.png" /></p>
 
 
 
