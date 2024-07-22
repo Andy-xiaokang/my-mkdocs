@@ -10,13 +10,13 @@
         <meta name="author" content="Andy-xiaokang">
       
       
-        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/Computer_English/Unit1/">
+        <link rel="canonical" href="https://andy-xiaokang.github.io/my-mkdocs/CS106L/move/">
       
       
-        <link rel="prev" href="../../CS61B-2018-spring/Lists/">
+        <link rel="prev" href="../specialMemberFunctions/">
       
       
-        <link rel="next" href="../Unit2/">
+        <link rel="next" href="../RAII/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Unit1 - Kang's Route Docs</title>
+        <title>Move Sementics - Kang's Route Docs</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unit1-computer-and-computer-science" class="md-skip">
+        <a href="#move-semantics" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unit1
+              Move Sementics
             
           </span>
         </div>
@@ -1100,19 +1100,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1126,7 +1128,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             CS106L
@@ -1140,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1161,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/streams/" class="md-nav__link">
+      <a href="../streams/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/containers/" class="md-nav__link">
+      <a href="../containers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1203,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/templates/" class="md-nav__link">
+      <a href="../templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1224,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1245,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/classes/" class="md-nav__link">
+      <a href="../classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1266,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/operators/" class="md-nav__link">
+      <a href="../operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1287,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/template-iterator/" class="md-nav__link">
+      <a href="../template-iterator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1308,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/specialMemberFunctions/" class="md-nav__link">
+      <a href="../specialMemberFunctions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,10 +1328,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../CS106L/move/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Move Sementics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1338,6 +1360,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lvalues-vs-rvalues" class="md-nav__link">
+    <span class="md-ellipsis">
+      lvalues VS rvalues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-constructor-and-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      move constructor and assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stdmove" class="md-nav__link">
+    <span class="md-ellipsis">
+      std::move
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap-and-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap and insert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfect-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      perfect forwarding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1350,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CS106L/RAII/" class="md-nav__link">
+      <a href="../RAII/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1759,21 +1846,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -1787,7 +1872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Computer-English
@@ -1798,30 +1883,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Unit1
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Computer_English/Unit1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1830,53 +1895,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#section-a-computer-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section A Computer overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-b-what-is-computer-science" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section B What Is Computer Science
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-c-digital-devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section C Digital Devices
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1889,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit2/" class="md-nav__link">
+      <a href="../../Computer_English/Unit2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1910,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit3/" class="md-nav__link">
+      <a href="../../Computer_English/Unit3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1931,7 +1949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit4/" class="md-nav__link">
+      <a href="../../Computer_English/Unit4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1952,7 +1970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit5/" class="md-nav__link">
+      <a href="../../Computer_English/Unit5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1973,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit6/" class="md-nav__link">
+      <a href="../../Computer_English/Unit6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1994,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit7/" class="md-nav__link">
+      <a href="../../Computer_English/Unit7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2015,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit8/" class="md-nav__link">
+      <a href="../../Computer_English/Unit8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2036,7 +2054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit9/" class="md-nav__link">
+      <a href="../../Computer_English/Unit9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2057,7 +2075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit10/" class="md-nav__link">
+      <a href="../../Computer_English/Unit10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2078,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit11/" class="md-nav__link">
+      <a href="../../Computer_English/Unit11/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2099,7 +2117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unit12/" class="md-nav__link">
+      <a href="../../Computer_English/Unit12/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2422,27 +2440,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#section-a-computer-overview" class="md-nav__link">
+  <a href="#lvalues-vs-rvalues" class="md-nav__link">
     <span class="md-ellipsis">
-      Section A Computer overview
+      lvalues VS rvalues
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-b-what-is-computer-science" class="md-nav__link">
+  <a href="#move-constructor-and-assignment" class="md-nav__link">
     <span class="md-ellipsis">
-      Section B What Is Computer Science
+      move constructor and assignment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-c-digital-devices" class="md-nav__link">
+  <a href="#stdmove" class="md-nav__link">
     <span class="md-ellipsis">
-      Section C Digital Devices
+      std::move
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap-and-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      swap and insert
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfect-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      perfect forwarding
     </span>
   </a>
   
@@ -2466,169 +2502,48 @@
   
 
 
-<h1 id="unit1-computer-and-computer-science">Unit1 Computer and Computer Science</h1>
-<p>There are some words selected from <strong>Computer English Fifth Edition China Machine Press</strong> when I am reading this book.</p>
-<h2 id="section-a-computer-overview">Section A Computer overview</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">--</th>
-<th style="text-align: center;">--</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">overview</td>
-<td style="text-align: center;">概述</td>
-</tr>
-<tr>
-<td style="text-align: center;">numeric(al)</td>
-<td style="text-align: center;">数字的；数值的</td>
-</tr>
-<tr>
-<td style="text-align: center;">precursor</td>
-<td style="text-align: center;">先驱</td>
-</tr>
-<tr>
-<td style="text-align: center;">analogue</td>
-<td style="text-align: center;">adj  模拟的</td>
-</tr>
-<tr>
-<td style="text-align: center;">incorporate</td>
-<td style="text-align: center;">包含 ；把…合并</td>
-</tr>
-<tr>
-<td style="text-align: center;">vacuum tube</td>
-<td style="text-align: center;">真空管</td>
-</tr>
-<tr>
-<td style="text-align: center;">encipher</td>
-<td style="text-align: center;">把…译成密码</td>
-</tr>
-<tr>
-<td style="text-align: center;">overturn</td>
-<td style="text-align: center;">推翻；废除</td>
-</tr>
-<tr>
-<td style="text-align: center;">advent</td>
-<td style="text-align: center;">出现；到来</td>
-</tr>
-<tr>
-<td style="text-align: center;">versatile</td>
-<td style="text-align: center;">多用途的；通用的</td>
-</tr>
-<tr>
-<td style="text-align: center;">fabricate</td>
-<td style="text-align: center;">制作</td>
-</tr>
-<tr>
-<td style="text-align: center;">nevertheless</td>
-<td style="text-align: center;">不过；然而</td>
-</tr>
-<tr>
-<td style="text-align: center;">workstation</td>
-<td style="text-align: center;">工作站</td>
-</tr>
-<tr>
-<td style="text-align: center;">specialized/dedicated</td>
-<td style="text-align: center;">专用的</td>
-</tr>
-<tr>
-<td style="text-align: center;">mainframe</td>
-<td style="text-align: center;">主机；大型机</td>
-</tr>
-</tbody>
-</table>
-<h2 id="section-b-what-is-computer-science">Section B What Is Computer Science</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">frontier</td>
-<td style="text-align: center;">前沿；新领域</td>
-</tr>
-<tr>
-<td style="text-align: center;">integral</td>
-<td style="text-align: center;">不可缺少的；必要的</td>
-</tr>
-<tr>
-<td style="text-align: center;">speculative</td>
-<td style="text-align: center;">推测的</td>
-</tr>
-<tr>
-<td style="text-align: center;">underlie</td>
-<td style="text-align: center;">构成…的基础</td>
-</tr>
-<tr>
-<td style="text-align: center;">optimal</td>
-<td style="text-align: center;">最优的</td>
-</tr>
-<tr>
-<td style="text-align: center;">retrieve</td>
-<td style="text-align: center;">检索</td>
-</tr>
-<tr>
-<td style="text-align: center;">robust</td>
-<td style="text-align: center;">健壮的；坚固的</td>
-</tr>
-<tr>
-<td style="text-align: center;">sensory</td>
-<td style="text-align: center;">感觉的；感官的</td>
-</tr>
-<tr>
-<td style="text-align: center;">unify</td>
-<td style="text-align: center;">使联合；使统一</td>
-</tr>
-<tr>
-<td style="text-align: center;">unifying</td>
-<td style="text-align: center;">统一的</td>
-</tr>
-<tr>
-<td style="text-align: center;">virtually</td>
-<td style="text-align: center;">事实上</td>
-</tr>
-<tr>
-<td style="text-align: center;">robust</td>
-<td style="text-align: center;">健壮的</td>
-</tr>
-</tbody>
-</table>
-<h2 id="section-c-digital-devices">Section C Digital Devices</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">simultaneous</td>
-<td style="text-align: center;">同时的</td>
-</tr>
-<tr>
-<td style="text-align: center;">simulate</td>
-<td style="text-align: center;">模仿；仿真</td>
-</tr>
-<tr>
-<td style="text-align: center;">tablet</td>
-<td style="text-align: center;">平板电脑</td>
-</tr>
-<tr>
-<td style="text-align: center;">a suite of</td>
-<td style="text-align: center;">一组；一套</td>
-</tr>
-<tr>
-<td style="text-align: center;">console</td>
-<td style="text-align: center;">控制台</td>
-</tr>
-</tbody>
-</table>
+<h1 id="move-semantics">Move Semantics</h1>
+<h2 id="lvalues-vs-rvalues">lvalues VS rvalues</h2>
+<p>How do we distinguish between when we <strong>CAN</strong> and <strong>CANNOT</strong> move?<br />
+<img alt="20240711225604" src="https://s2.loli.net/2024/07/11/hLuJSNr6xcwjVB2.png" />
+<img alt="20240711225747" src="https://s2.loli.net/2024/07/11/9kv13wEFAea8KOr.png" />
+<img alt="20240711231541" src="https://s2.loli.net/2024/07/11/S7YiNhWf4PKcBL9.png" />
+<img alt="20240711230914" src="https://s2.loli.net/2024/07/11/8UsnaQXH6Rzl9Ji.png" />
+<img alt="20240711235603" src="https://s2.loli.net/2024/07/11/fkeqAcRoBmDUJsj.png" />
+<img alt="20240712001429" src="https://s2.loli.net/2024/07/12/BrEHdZXGMvFkVhc.png" />
+<img alt="20240712001459" src="https://s2.loli.net/2024/07/12/i6IePyn8LsUrYvC.png" />
+<img alt="20240712002350" src="https://s2.loli.net/2024/07/12/S5tCN1sWGTKrY4w.png" />
+<img alt="20240712004239" src="https://s2.loli.net/2024/07/12/BTfVxS7ojgGQCIi.png" />
+<img alt="20240712004323" src="https://s2.loli.net/2024/07/12/oG8pyWhuw69IkQt.png" />
+<img alt="20240712004411" src="https://s2.loli.net/2024/07/12/d1jKhJvuBAbWaDG.png" />
+<img alt="20240712005802" src="https://s2.loli.net/2024/07/12/wWdV2pkfXrK9Y6v.png" /></p>
+<h2 id="move-constructor-and-assignment">move constructor and assignment</h2>
+<p>How do we actually move?
+<img alt="20240712011940" src="https://s2.loli.net/2024/07/12/58Vv3edtfwjJTxz.png" />
+<img alt="20240712013652" src="https://s2.loli.net/2024/07/12/mvhg6WMGoDfjYVE.png" />
+<img alt="20240712013756" src="https://s2.loli.net/2024/07/12/vqeKlbmHZT61MtC.png" />
+<img alt="20240712014946" src="https://s2.loli.net/2024/07/12/DUYo9dS812qyNaV.png" />
+<img alt="20240712015813" src="https://s2.loli.net/2024/07/12/pV2aPsYmefBdKg7.png" />
+<img alt="20240712015917" src="https://s2.loli.net/2024/07/12/SQIBm6OFabzVhcu.png" /></p>
+<h2 id="stdmove">std::move</h2>
+<p>Can we force a move to occur?
+<img alt="20240712022546" src="https://s2.loli.net/2024/07/12/ikuRZs6In7KaTpW.png" />
+<img alt="20240712020715" src="https://s2.loli.net/2024/07/12/eAuYlbEWT7wFRIN.png" />
+<img alt="20240712020917" src="https://s2.loli.net/2024/07/12/baWR25jcf87HuMA.png" />
+<img alt="20240712021024" src="https://s2.loli.net/2024/07/12/C2T76kEvwFD4b1V.png" />
+<img alt="20240712021947" src="https://s2.loli.net/2024/07/12/nwV7fRba2rDemxJ.png" />
+<img alt="20240712022342" src="https://s2.loli.net/2024/07/12/3q8s5SEdrglyWbv.png" />
+<img alt="20240712023359" src="https://s2.loli.net/2024/07/12/rZUEO6WGI5RemLo.png" />
+<img alt="20240712023815" src="https://s2.loli.net/2024/07/12/ALclHINXPVoMw8d.png" />
+<img alt="20240712023930" src="https://s2.loli.net/2024/07/12/vFaVJI58iCSyz7q.png" /></p>
+<h2 id="swap-and-insert">swap and insert</h2>
+<p>How do we apply move?
+<img alt="20240712030947" src="https://s2.loli.net/2024/07/12/d4Bjzuyc1vLiYsb.png" />
+<img alt="20240712031027" src="https://s2.loli.net/2024/07/12/NUTXI6j9ixacFQK.png" />
+<img alt="20240712031315" src="https://s2.loli.net/2024/07/12/yh4H8OZukBmCaQJ.png" />
+<img alt="20240712031341" src="https://s2.loli.net/2024/07/12/TeEtXZ58UIhqiKf.png" /></p>
+<h2 id="perfect-forwarding">perfect forwarding</h2>
+<p>Can we apply this to templates?</p>
 
 
 
