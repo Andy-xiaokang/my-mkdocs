@@ -127,6 +127,10 @@ nav:
       - functions and algorithms: "CS106L/functions.md"
       - classes: "CS106L/classes.md"
       - operators: "CS106L/operators.md"
+      - template and iterator class: "CS106L/template-iterator.md"
+      - special member functions: "CS106L/specialMemberFunctions.md"
+      - Move Sementics: "CS106L/move.md"
+      - RAII and smart pointer: "CS106L/RAII.md"
 
   - CS50X:
       - week1: "CS50/week1.md"

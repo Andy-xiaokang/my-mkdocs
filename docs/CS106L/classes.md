@@ -59,3 +59,50 @@ Guarantees that the function won't call anything but const funcitons, and won't 
 
 ![20240707231951](https://s2.loli.net/2024/07/07/DNE4eMHZoV2CAzX.png)
 ![20240707232010](https://s2.loli.net/2024/07/07/CkWUZnLblHDVduv.png)
+
+## member initializer list
+
+``` c++
+    class Queue {
+    private:
+        Node* front;
+        Node* rear;
+        int items;
+        const int qsize;
+
+    public:
+        Queue(int qs);
+    }
+
+    // in cpp file
+    Queue::Queue(int qs) {
+        front = rear = NULL;
+        items = 0;
+        qsize = qs;  // not acceptable!!!
+    }
+```
+
+问题在于 qsize 是常量， 所以可以对它进行初始化，但不能给它赋值。从概念来说，调用构造函数时，对象将在括号中的代码执行之前被创建。因此，调用 Queue(int qs) 构造函数将导致程序首先给 4 个成员变量分配内存。然后，程序流程进入到括号中，使用常规的赋值方式将值存储在内存中。因此对于 const 数据成员，必须在执行到构造函数体之前，==**即创建对象时进行初始化**==。C++ 提供了一种特殊的语法来完成上述工作，它叫做成员初始化列表（member initializer list）。成员初始化列表由逗号分隔的初始化列表组成（前面要带冒号）。它位于参数列表的右括号之后、函数体左括号之前。  
+
+``` C++
+    Queue::Queue(int qs) : qsize(qs) {
+        front = rear = NULL;
+        items = 0;
+    }
+```
+
+只有构造函数可以使用这种初始化列表语法。**对于 const 类成员，必须使用这种语法。另外，对于被声明为引用的类成员，也必须使用这种语法。这是因为引用与 const 数据类似，只能在被创建时进行初始化。**
+
+``` c++
+class Agency {
+    // etc ...
+}
+
+class Agent {
+private:
+    Agency& belong; // must use initializer list to initialize
+    ...
+}
+
+Agent::Agent(Agency& a) : belong(a) { ... }
+```
