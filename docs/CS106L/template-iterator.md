@@ -10,6 +10,8 @@ comments: true
 ![20240709182028](https://s2.loli.net/2024/07/09/UJCxSPjRZqY2yDt.png)
 ![20240709182851](https://s2.loli.net/2024/07/09/T7VGula6nxeEAX9.png)
 ![20240709183147](https://s2.loli.net/2024/07/09/6mkdDFiarxwltqX.png)
+![20240723184400](https://s2.loli.net/2024/07/23/uBozLXFEaHGbQyY.png)
+当你声明一个成员函数为 const 时，实际上是在告诉编译器这个函数不会修改类的任何成员变量。这在编译时就能检测到。如果尝试修改成员变量，编译器会报错。
 
 ## POLA
 
