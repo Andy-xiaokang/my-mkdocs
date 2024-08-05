@@ -11,7 +11,7 @@ comments: true
 - [x] [CS50P](https://github.com/Andy-xiaokang/CS50)
 - [x] [Stanford CS106B Programming Abstractions In C++](https://github.com/Andy-xiaokang/CS106B)
 - [x] [Stanford CS106L Standard C++ programming](https://github.com/Andy-xiaokang/CS106L)
-- [ ] Amirkabir University of Technology 1400-2: Advanced Programming Course
+- [x] [Amirkabir University of Technology 1400-2: Advanced Programming Course](https://github.com/Andy-xiaokang/AP1400-2)
 - [x] [UCB CS61A: Structure and Interpretation of Computer Programs](https://github.com/Andy-xiaokang/cs61a)
 
 ## 数据结构和算法
