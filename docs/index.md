@@ -20,11 +20,14 @@ comments: true
 - [ ] [Coursera Algorithm I & II](https://github.com/Andy-xiaokang/Princeton-Algorithms)
 - [ ] MIT Introduction to Algorithms 6.006
 
+## 计算机系统导论
+
+- [ ] CMU 15-213: CSAPP
+
 ## 体系结构
 
 - [x] [Coursera Nand2tetris](https://github.com/Andy-xiaokang/Nand_to_Tetris)
 - [ ] UCB CS61C
-- [ ] CMU 15-213: CSAPP
 
 ## 操作系统
 

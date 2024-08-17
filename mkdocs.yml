@@ -147,6 +147,10 @@ nav:
   - CS61B-2018-sp:
       - Introduction_to_java: "CS61B-2018-spring/Introduction_to_java.md"
       - Lists: "CS61B-2018-spring/Lists.md"
+      
+  - CSAPP:
+      - chapter2: "CSAPP/chapter2.md"
+
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 
       - Unit2: "Computer_English/Unit2.md" 

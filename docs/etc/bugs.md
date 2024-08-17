@@ -18,6 +18,11 @@ In vscode settings.json add `"vim.mouseSelectionGoesIntoVisualMode": false,` to 
     "terminal.integrated.inheritEnv": false,
 ```
 
+### vscode 编写C++ intelliSense 报错
+
+* 注意添加编写 c_cpp_properties.json 文件
+* 注意 includePath 添加的路径
+
 ## Python
 
 ### After changing user folder pyenv fault
