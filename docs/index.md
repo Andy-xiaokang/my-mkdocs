@@ -22,7 +22,7 @@ comments: true
 
 ## 计算机系统导论
 
-- [ ] CMU 15-213: CSAPP
+- [ ] [CMU 15-213: CSAPP](https://github.com/Andy-xiaokang/CSAPP)
 
 ## 体系结构
 
