@@ -16,11 +16,11 @@
         <link rel="prev" href="../../CS61B-2018-spring/Lists/">
       
       
-        <link rel="next" href="../../Computer_English/Unit1/">
+        <link rel="next" href="../chapter3/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.2">
     
     
       
@@ -1864,10 +1864,70 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ieee-floating-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      IEEE floating point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#243-example-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 example numbers
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    chapter3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    chapter6
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2495,6 +2555,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ieee-floating-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      IEEE floating point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#243-example-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 example numbers
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2524,6 +2602,47 @@
 <h3 id="t2u">T2U</h3>
 <p><img alt="20240816215424" src="https://s2.loli.net/2024/08/16/U63rQfmu4XsIKwJ.png" />
 <img alt="20240816215530" src="https://s2.loli.net/2024/08/16/bA8LWF3cOYjqKPB.png" /></p>
+<h3 id="ieee-floating-point">IEEE floating point</h3>
+<p><img alt="20240817235655" src="https://s2.loli.net/2024/08/17/QWck9MmzJKqbgBU.png" />
+<img alt="20240817235906" src="https://s2.loli.net/2024/08/17/IKzslhQkfta6UXE.png" /></p>
+<p>Case 1: Normalized Values<br />
+This is the most common case. It occurs when the bit pattern of exp is neither
+all zeros (numeric value 0) nor all ones (numeric value 255 for single precision,
+2047 for double). In this case, the exponent field is interpreted as representing a
+signed integer in biased form. That is, the exponent value is E = e − Bias, where
+e is the unsigned number having bit representation e<sub>k−1</sub> . . . e<sub>1</sub>e<sub>0</sub> and Bias is a bias
+value equal to 2<sup>k−1</sup> − 1 (127 for single precision and 1023 for double). This yields
+exponent ranges from −126 to +127 for single precision and −1022 to +1023 for
+double precision.<br />
+The fraction field frac is interpreted as representing the fractional value f ,
+where 0 ≤f &lt;1, having binary representation 0.f<sub>n−1</sub> . . . f<sub>1</sub>f<sub>0</sub>, that is, with the binary point to the left of the most significant bit. The significand is defined to be
+M = 1+ f . This is sometimes called an implied leading 1 representation, because
+we can viewM to be the number with binary representation 1.f<sub>n−1</sub>f<sub>n−2</sub> . . . f<sub>0</sub>. This
+representation is a trick for getting an additional bit of precision for free, since we
+can always adjust the exponent E so that significand M is in the range 1≤M &lt;2
+(assuming there is no overflow).We therefore do not need to explicitly represent
+the leading bit, since it always equals 1.  </p>
+<p>Case 2: Denormalized Values
+When the exponent field is all zeros, the represented number is in denormalized
+form. In this case, the exponent value is E = 1− Bias, and the significand value is
+M = f , that is, the value of the fraction field without an implied leading 1.<br />
+Denormalized numbers serve two purposes. First, they provide a way to
+represent numeric value 0, since with a normalized number we must always have
+M ≥ 1, and hence we cannot represent 0. In fact, the floating-point representation
+of +0.0 has a bit pattern of all zeros: the sign bit is 0, the exponent field is all
+zeros (indicating a denormalized value), and the fraction field is all zeros, giving
+M = f = 0. Curiously, when the sign bit is 1, but the other fields are all zeros, we
+get the value −0.0. With IEEE floating-point format, the values −0.0 and +0.0
+are considered different in some ways and the same in others.<br />
+A second function of denormalized numbers is to represent numbers that are
+very close to 0.0. They provide a property known as gradual underflow in which
+possible numeric values are spaced evenly near 0.0.  </p>
+<p>Case 3: Special Values</p>
+<hr />
+<h3 id="243-example-numbers">2.4.3 example numbers</h3>
+<p><img alt="20240818001448" src="https://s2.loli.net/2024/08/18/zxCilSYJAp9qDwN.png" />
+<img alt="20240818001515" src="https://s2.loli.net/2024/08/18/zqYTABP6oNO9vrF.png" />
+<img alt="20240818004518" src="https://s2.loli.net/2024/08/18/x3f7omNOFIKqwuz.png" /></p>
 
 
 
@@ -2546,7 +2665,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2024</span>
   </span>
 
     
@@ -2556,7 +2675,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2024</span>
   </span>
 
     
