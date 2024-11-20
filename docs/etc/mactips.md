@@ -2,9 +2,12 @@
 comments: true
 ---
 
-# Mac tips 
+# Mac tips
+
 ## good software
+
 ### system efficiency tool
+
 * [Alfread](https://www.alfredapp.com/)  
     Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac.
 * [Homebrew](https://brew.sh/)  
@@ -26,7 +29,9 @@ comments: true
     A powerful and stable keyboard customizer for macOS.
 * [qwerty learner](https://qwerty.kaiyi.cool/)
     一个练习盲打和记忆单词的好工具
+
 ### system experience enhancement tools
+
 * [ClashX](https://github.com/yichengchen/clashX)  
     A rule based proxy For Mac base on [Clash](https://dreamacro.github.io/clash/).
 * [ClashX-Pro](https://github.com/Loyalsoldier/clash-rules/tree/master?tab=readme-ov-file).  
@@ -41,11 +46,14 @@ comments: true
     BetterTouchTool is a great, feature packed app that allows you to customize various input devices on your Mac.
 * [AppCleaner](https://freemacsoft.net/appcleaner/)  
     AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
+
 ### software reference website 
+
 * [appstorrent](https://appstorrent.ru/)
 * [xclient](https://xclient.info/s/)
 
-## shortcuts 
+## shortcuts
+
 * cheatsheet `command` 2s view the shortcuts of application's menu bar 
 * `shift + command + .` 打开隐藏文件夹
 * 开机键 + `command + R` 从内建 macOS 恢复系统启动
@@ -54,15 +62,18 @@ comments: true
 * `option +delete`  delete a word
 * `command + delete` delete a line
 * `enter` rename the file or folder
-* `fn` switch input method
-
+* `fn` switch input method (需要设置)
+* 鼠标右键后按下 `option` 按键可以使用隐藏功能，如拷贝文件路径、设置始终打开方式、打开系统信息等
+* finder 中 `space` 按键可以预览文件，方向键快速切换文件
 
 ## configuration
+
 * [mac set up guide](https://sourabhbajaj.com/mac-setup/)
 * [my dotfiles](https://github.com/Andy-xiaokang/dotfiles)  
 * [some new mac settings](https://www.youtube.com/watch?v=WbklMGq59DU)  
 
 ## change user home folder name `~`  
+
 * [change home folder name](https://support.apple.com/zh-cn/HT201548)  
 * [ennable root user login](https://support.apple.com/zh-cn/HT204012)  
 after log out or restart select others  
@@ -70,6 +81,7 @@ then user name fill in `root`
 password fill in password for `root`  
 
 ## use time machine backup system and replace SSD  
+
 * [create external booter](https://support.apple.com/zh-cn/HT201372)  
 * [youtube replace SSD reference](https://www.youtube.com/watch?v=KT3IKRYqEJU&list=PLXNz0NSnoTFYvmbM0W1DWUuUWo20cQYN9)  
 * [use time machine backup mac](https://support.apple.com/zh-cn/HT201250)  
@@ -77,12 +89,15 @@ after backup when restart the new mac select use time machine restore datas
 * [mac 启动组合键](https://support.apple.com/zh-cn/102603)  
 
 ## proxy
-* telegram 
+
+* telegram
 data and storage > use proxy > socks5 host: 127.0.0.1  port: 7890 (which is the port for clashX)
-### Spotify 
+
+### Spotify
+
 when counter with country and region are different from your information  
 use proxy in the login interface go settings  
-use proxy socks5 host: 127.0.0.1   port: 7890   
+use proxy socks5 host: 127.0.0.1   port: 7890
 
 * [clashX allow LAN](https://blog.mebi.me/post/clash-speed-other-devices#%E4%BB%8B%E7%BB%8D), to let other devices to go though the GFW without download clash and purchase proxy service, and you can turn off the DHCP 
     1. let your Computer and devices connected to the same LAN  
@@ -92,6 +107,7 @@ use proxy socks5 host: 127.0.0.1   port: 7890
     5. fill in the ip address and port is 7890 (clashX port)  
 
 ## [chatgpt](https://chat.openai.com/)
+
 * [webCatalog](https://webcatalog.io/en/)  
     Transform websites into desktop apps with WebCatalog, and access a wealth of exclusive apps for Mac,  
     then you can pack the chatgpt website in local and revoke chatgpt with Alfred  
@@ -111,23 +127,28 @@ upload image you can
 `ssh-add` then fill in the passphase  
 `ssh-agent` to auto fill passphase  
 in macOS add the following commands in `~/.zshrc`  
-```
+
+``` shell
 ssh-add --apple-use-keychain YOUR-KEY
 ssh-agent 
 ```  
+
 you can search the documentation in the official website [using-ssh-agent-forwarding](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
 
 ## set off ipv6 Wi-Fi 
+
 `sudo networksetup -listallnetworkservices`  
 `sudo networksetup -setv6off Wi-Fi`  
 then the wifi ip will changed from ipv6 to ipv4  
 
 ## font
+
 * iterm2 `Droid Sans Mono Slashed for Powerline`
 * terminal `SM Mono Regular`
 * mkdocs `Roboto Slab`
 
-## keyboard 
+## keyboard
+
 * in settings keyboard -> keyboard `when stoke fn key, change input method`.  
 * in settings keyboard -> modifier keys(修饰键) -> `caps lock : escape`.  
 * in karabiner-elements  
@@ -136,19 +157,29 @@ then the wifi ip will changed from ipv6 to ipv4
     * bluetooth usb host controller `caps lock : escape` and `escape: caps lock`.
 
 ## github 免密 push
+
+```shell
+# set ssh-add and ssh-agent
+ssh-add --apple-use-keychain ~/.ssh/id_rsa
+ssh-agent
+```
+
 * [gh](https://github.com/cli/cli) `brew install gh`
 * `gh auth login` 按照提示采用 ssh  
 
 ## store web resources
+
 * 视频下载：`yt-dlp`
 * `youtube-dl -a videos.txt`
 * 扒课程页面所有资源： `wget -mkEpnp --no-check-certificate`  链接
 
 ## mac reference website
+
 * [技术规格](https://support.apple.com/zh_CN/specs/maclaptops)
 * [command line tools 下载](https://sleele.com/2019/08/11/command-line-tools/)  
 
 ## clashX-pro rule-set proxy-set
+
 由于最开始买的一家机场跑路，让我不得不在 github 上接触到了 [clashX-pro](https://github.com/Loyalsoldier/clash-rules), 对clashX pro 的 [proxy-providers](https://clash.wiki/configuration/outbound.html#proxy-providers-%E4%BB%A3%E7%90%86%E9%9B%86) 和 [rule-providers](https://clash.wiki/premium/rule-providers.html) 这两样功能产生了强烈兴趣，但同时也遇到了不少问题。  
 
 * `unmarshal errors` 可能是由于机场提供的链接并非是clash订阅链接，需要进行[订阅转换](https://acl4ssr-sub.github.io/)  
@@ -181,6 +212,7 @@ then the wifi ip will changed from ipv6 to ipv4
 * 还有其他很多小问题和功能可以探索，就不一一列举了
 
 ## edit shortcuts
+
 * `option + delete` delete an entire word  
 * `opiton + arrow key` jumps over the whole word
 * `shift + arrow key` highlight the previous character

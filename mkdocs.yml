@@ -152,6 +152,7 @@ nav:
       - chapter2: "CSAPP/chapter2.md"
       - chapter3: "CSAPP/chapter3.md"
       - chapter6: "CSAPP/chapter6.md"
+      - chapter7: "CSAPP/chapter7.md"
 
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 
@@ -178,6 +179,7 @@ nav:
       - life record: "etc/liferecord.md"
       - lyrics: "etc/lyrics.md"
       - quotes: "etc/quotes.md"
+      - nobel prize: "etc/nobelprize.md"
       
 
 extra:
