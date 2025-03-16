@@ -48,3 +48,14 @@ when the local git `user.email` (the email address used for the commits ) is not
 ### getline(cin, s) don't wait user's input
 
 ![20240719173957](https://s2.loli.net/2024/07/19/NxOnu7TJGKPrLyD.png)
+
+## Macbook
+
+### magic trackpad 出现严重不跟手的问题
+
+有一次发现使用 magic trackpad 出现严重不跟手的问题，尝试重启电脑无法解决，插入有线使用后明显好转，但是转而使用蓝牙也会变得不跟手、延迟很高，重启蓝牙后也无法解决，最终[重启触控板开关重新连接后恢复](https://www.v2ex.com/t/865636)  
+
+### 终端 path 出现多余的环境变量
+
+在 `/etc/path.d` 目录中找到对应于环境变量的文件并删除
+

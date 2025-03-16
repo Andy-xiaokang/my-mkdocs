@@ -16,6 +16,8 @@ comments: true
     CheatSheet is a free utility app that lets you see keyboard shortcuts with a press of a button. (CheatSheet has been discontinued because it no longer works with macOS 14 Sonoma. [KeyCue](https://www.ergonis.com/keycue/switching/cheatsheet) is still available.)
 * [keyClu](xhttps://sergii.tatarenkov.name/keyclu/support/)  
     Simple and handy overview of applications shortcuts. Easy to use, just press ⌘ twice and hold to see the list.
+* [switchKey](https://github.com/itsuhane/SwitchKey)
+    Automatically activate the correct input source.
 * [maccy](https://github.com/p0deje/Maccy)  
     Maccy is a lightweight clipboard manager for macOS.
 * [customShortcuts](https://www.houdah.com/customShortcuts/download.html)  
@@ -44,6 +46,8 @@ comments: true
     Bartender improves your workflow with quick reveal, search, custom hotkeys and triggers, and lots more.
 * [BetterTouchTool](https://folivora.ai/)  
     BetterTouchTool is a great, feature packed app that allows you to customize various input devices on your Mac.
+* [MonitorControl](https://github.com/MonitorControl/MonitorControl)
+    Controls your external display brightness and volume and shows native OSD. Use menubar extra sliders or the keyboard, including native Apple keys!
 * [AppCleaner](https://freemacsoft.net/appcleaner/)  
     AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 
@@ -51,6 +55,7 @@ comments: true
 
 * [appstorrent](https://appstorrent.ru/)
 * [xclient](https://xclient.info/s/)
+* [InjectLib](https://qiuchenlyopensource.github.io/Documentaions/starter-topic.html)
 
 ## shortcuts
 
@@ -116,6 +121,7 @@ use proxy socks5 host: 127.0.0.1   port: 7890
 * proxy group  add `- DOMAIN-SUFFIX,chat.openai.com,动画疯` or `- DOMAIN-SUFFIX,chat.openai.com,电报吹水` in the configuration file, the ip address will be changed to taiwan to use ChatGpt, and ban **auto update** in 配置/托管配置
 
 ## [picture bed](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1)
+
 upload image you can  
 
 1. use **PicGo** extension for vscode use `option+command+u` to upload the image  
@@ -124,6 +130,7 @@ upload image you can
 2. [use github for your picture bed (not recommend )](https://juejin.cn/post/7031461637986975757)    
 
 ## auto fill passphase for ssh  
+
 `ssh-add` then fill in the passphase  
 `ssh-agent` to auto fill passphase  
 in macOS add the following commands in `~/.zshrc`  
@@ -222,3 +229,21 @@ ssh-agent
 * `control + command + space` open system character panel
 * `control + command + d` open system dictionary
 * `command + option + escape` force quit application  
+
+## 永久更改用于打开所有特定类型文件的 App
+
+* 右键 按下 `option` 选择始终以此方式打开
+* 左键文件 按下 `command + i` 显示简介 更改打开方式并设置为始终以此方式打开
+
+## 从互联网下载的文件无法打开或文件已损坏
+
+1. 打开从互联网下载的不受信任的文件
+
+    com.apple.quarantine 是 macOS 系统中的一个特殊文件标记，用于标识被下载或从互联网获取的文件。这个标记表示该文件来自不信任的来源，并且在首次打开时，macOS 会进行安全检查，如提示用户确认是否打开该文件。
+
+    `sudo xattr -d com.apple.quarantine /path/to/your/file`
+
+2. 修复 macOS 上“已损坏，无法打开”的应用
+
+    `sudo codesign --force --deep --sign - /Applications/YourApp.app`  
+    这里 `-` 代表使用 自签名（Ad-hoc 签名），不需要开发者证书，但不能用于发布应用。

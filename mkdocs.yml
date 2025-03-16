@@ -153,6 +153,9 @@ nav:
       - chapter3: "CSAPP/chapter3.md"
       - chapter6: "CSAPP/chapter6.md"
       - chapter7: "CSAPP/chapter7.md"
+      - chapter8: "CSAPP/chapter8.md"
+      - chapter9: "CSAPP/chapter9.md"
+      - chapter10: "CSAPP/chapter10.md"
 
   - Computer-English:
       - Unit1: "Computer_English/Unit1.md" 
@@ -180,6 +183,8 @@ nav:
       - lyrics: "etc/lyrics.md"
       - quotes: "etc/quotes.md"
       - nobel prize: "etc/nobelprize.md"
+  - practical skills:
+      - 驾照: "skill/drivelicense.md"
       
 
 extra:

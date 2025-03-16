@@ -22,6 +22,7 @@ comments: true
 
 雷军
 > 顺势而为
+> 聪明的人，勤奋的人，这个世界上多了去了，这是成功的前置条件，有这些不保证你成功；真正重要的是顺势而为，你要找到那个台风口
 
 Bjarne Stroustrup
 > be ready for the opportunity. I mean a broad-based educaiton of broad-based skill set, which is what you build up when you educate, you're patiently building a portfolio of skills. means that you can take advantage of an opportunity when it comes along. We can recognize it sometimes, we have lots of opportunities but alot of them we either can't take advantage of or we don't notice. It was my fairly broad education, I've done Standard computer science and compilers, I've done multiple languages, I think I knew two dozen at the time, and I have done machine architecture, I've done operating systems, and that skill set turned out to be useful.  
